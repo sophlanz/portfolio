@@ -1,0 +1,14 @@
+@import "base/reset";
+@import "sections/all";
+
+
+@font-face {
+    font-family: 'Abril Fatface';
+    src:   local("Abril Fatface"),
+    url(../../public/fonts/AbrilFatface-Regular.ttf) format("truetype");
+}
+@font-face {
+    font-family:'Niconne';
+    src: local('Niconne'),
+    url(../../public/fonts/Niconne-Regular.ttf) format("truetype");
+}
