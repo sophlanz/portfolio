@@ -1,6 +1,27 @@
-.firstLastName h1 {
-    font-family:'Abril Fatface'
+.firstLastName{
+    position:absolute;
+    top:40%;
+    left:10%;
+}
+header h1.first {
+    font-family:'Branch';
+    font-size:12rem;
+    position:absolute;
+    left:53%;
+    top:-80%;
+   
+}
+header h1.last{
+    font-family:'Branch';
+    font-size:12rem;
 }
 .nameTitle h3 {
-    font-family:"Niconne"
+    font-family:"Cotta";
+    font-size:2.8rem;
+    width:3.5em;
+    margin-top:50px;
+    margin-left:20px;
+}
+.nameTitle {
+    display:flex;
 }
