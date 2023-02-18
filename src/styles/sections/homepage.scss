@@ -3,24 +3,32 @@
     top:40%;
     left:10%;
 }
+.firstLastName h1 span {
+    color:$green;
+}
 header h1.first {
     font-family:'Branch';
     font-size:12rem;
     position:absolute;
-    left:53%;
+    left:52%;
     top:-80%;
+    color:white;
    
 }
 header h1.last{
     font-family:'Branch';
     font-size:12rem;
+    color:white;
 }
 .nameTitle h3 {
     font-family:"Cotta";
-    font-size:2.8rem;
-    width:3.5em;
-    margin-top:50px;
+    font-size:3rem;
+    width:12rem;
+    margin-top:55px;
     margin-left:20px;
+    color:$green;
+    border-bottom: 2px solid white;
+    height:100px;
 }
 .nameTitle {
     display:flex;
