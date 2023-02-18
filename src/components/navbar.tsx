@@ -14,13 +14,13 @@ export default function NavBar () {
             </div>
            <div className="right">
                  <li>
-                      <Link href='/projects'>Projects</Link>
+                      <Link href='/projects'><span>P</span>R<span>O</span>J<span>E</span>C<span>T</span>S</Link>
                   </li>
                   <li>
-                      <Link href='/about'>About</Link>
+                      <Link href='/about'>A<span>B</span>O<span>U</span>T</Link>
                   </li>
                   <li>
-                      <Link href='/contact'>Contact</Link>
+                      <Link href='/contact'><span>C</span>O<span>N</span>T<span>A</span>C<span>T</span></Link>
                   </li>
            </div>
             
