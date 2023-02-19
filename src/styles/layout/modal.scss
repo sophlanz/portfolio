@@ -4,13 +4,22 @@
     left: 0px;
     right: 0px;
     bottom: 0px;
-    
     backdrop-filter:blur(10px);
+    animation: blur-in 2s forwards;
     display:flex;
     justify-content: center;
     align-items: center;
     font-size:3rem;
 }
+//animation to blur in blackdrop filter
+@keyframes blur-in {
+    from {
+      backdrop-filter: blur(0px);
+    }
+    to {
+      backdrop-filter: blur(10px);
+    }
+  }
 .Overlay{
     background-color: white;
 }
