@@ -4,8 +4,8 @@ import NavBar from '../components/navbar';
 
 
 
-
 export default function Home() {
+
   return(
     <>
         <header className="firstLastName">
@@ -14,6 +14,7 @@ export default function Home() {
                 <h1 className="last">Lanzend<span>o</span>rf</h1>
                 <h3>Software Engineer</h3>
             </div>
+           
         </header>
     
     </>
