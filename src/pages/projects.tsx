@@ -19,52 +19,63 @@ export default function Projects() {
     return (
         
         <div className="projects">
-        <h1 className="project">  PROJECTS</h1>
         <div className="projectsContainer" ref={projectsContainerRef}>
+        <h1 className="project">  PROJECTS</h1>
             <div className="projectContainer">
                     <h2>Excursion Escape</h2>
-                    <Image
-                    src="/ImagesProjects/excursionEscape.png"
-                    alt="Picture of the author"
-                    width={450}
-                    height={570}
-                     />
+                    <div className="imgContainer">
+                         <Image
+                         src="/ImagesProjects/excursionEscape.png"
+                         alt="Picture of the author"
+                         width={450}
+                         height={570}
+                         style={{objectPosition:"top left"}}
+                          />
+                     </div>
             </div>
             <div className="projectContainer">
                     <h2>CV-Generator</h2>
-                    <Image
-                    src="/ImagesProjects/cvCurator.png"
-                    alt="Picture of the author"
-                    width={450}
-                    height={570}
+                    <div className="imgContainer">
+                        <Image
+                        src="/ImagesProjects/cvCurator.png"
+                        alt="Picture of the author"
+                        width={450}
+                        height={570}
                      />
+                     </div>
             </div>
             <div className="projectContainer">
                     <h2>Weather App</h2>
-                    <Image
-                    src="/ImagesProjects/weatherApp.png"
-                    alt="Picture of the author"
-                    width={450}
-                    height={570}
-                     />
+                    <div className="imgContainer">
+                        <Image
+                        src="/ImagesProjects/weatherApp.png"
+                        alt="Picture of the author"
+                        width={450}
+                        height={570}
+                         />
+                     </div>
             </div>
             <div className="projectContainer">
                     <h2>Restaurant Page</h2>
-                    <Image
-                    src="/ImagesProjects/restaurantPage.png"
-                    alt="Picture of the author"
-                    width={450}
-                    height={570}
-                     />
+                    <div className="imgContainer">
+                        <Image
+                        src="/ImagesProjects/restaurantPage.png"
+                        alt="Picture of the author"
+                        width={450}
+                        height={570}
+                         />
+                     </div>
             </div>
             <div className="projectContainer">
                     <h2>Etch-A-Sketch</h2>
-                    <Image
-                    src="/ImagesProjects/etchSketch.png"
-                    alt="Picture of the author"
-                    width={450}
-                    height={570}
-                     />
+                    <div className="imgContainer">
+                        <Image
+                        src="/ImagesProjects/etchSketch.png"
+                        alt="Picture of the author"
+                        width={450}
+                        height={570}
+                         />
+                    </div>
             </div>
         </div>
         </div>
