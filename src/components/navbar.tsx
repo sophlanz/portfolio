@@ -6,16 +6,7 @@ import Modal from 'react-modal';
 export default function NavBar () {
     const [modalIsOpen, setIsOpen] = useState<boolean>(false);
     const [displayList, setDisplayList] = useState<JSX.Element[]>([]);
-    const listItems: JSX.Element [] = [  
-    <li> 
-        <Link href='/projects'><span>P</span>R<span>O</span>J<span>E</span>C<span>T</span>S</Link>
-    </li>,
-    <li >
-         <Link href='/about'>A<span>B</span>O<span>U</span>T</Link>
-    </li>,
-    <li >
-          <Link href='/contact'><span>C</span>O<span>N</span>T<span>A</span>C<span>T</span></Link>
-    </li>];
+  
     
     const openModal= () => {
         //clear old list
@@ -27,6 +18,16 @@ export default function NavBar () {
         setIsOpen(false);
         setDisplayList([])
     }
+    const listItems: JSX.Element [] = [  
+        <li> 
+            <Link onClick ={closeModal} href='/projects'><span>P</span>R<span>O</span>J<span>E</span>C<span>T</span>S</Link>
+        </li>,
+        <li >
+             <Link onClick ={closeModal} href='/about'>A<span>B</span>O<span>U</span>T</Link>
+        </li>,
+        <li >
+              <Link onClick ={closeModal} href='/contact'><span>C</span>O<span>N</span>T<span>A</span>C<span>T</span></Link>
+        </li>];
     let index: number=0;
     useEffect(() => {
         const interval = setInterval(() => {

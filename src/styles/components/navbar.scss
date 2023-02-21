@@ -10,7 +10,7 @@ nav .left li a{
     display:flex;
     flex-direction:column;
     align-items:center;
-    font-size:2rem;
+    font-size:2.2rem;
     font-family:"Branch"
 }
 .right li:hover span , .left li span span {
@@ -21,7 +21,8 @@ button.menuToggle{
    border:none;
    color:white;
    font-family:"Cotta";
-   font-size:1.5rem;
+   font-size:2rem;
+   font-weight:bolder;
    position:absolute;
    top:20px;
    right:30px;
@@ -62,5 +63,7 @@ nav ul .right li:hover span{
 }
 .right{
     position:absolute;
-    top:60%
+    top:60%;
+    /*so menu elements load left to right*/
+    left:0%;
 }

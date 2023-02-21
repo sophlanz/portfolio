@@ -1,0 +1,40 @@
+.projectsContainer {
+    display:flex;
+    color:white;
+    overflow-x: scroll;
+}
+.projectContainer {
+    display:flex;
+    flex-direction:column;
+    margin-left:30px;
+    
+}
+h1.project {
+    color:white;
+    font-size:4rem;
+    margin-top: 10px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+.projects {
+    display:flex;
+    flex-direction:column;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.projectContainer h2{
+    font-size:3rem;
+    color:black;
+    margin-bottom:50px;
+    font-weight:bolder;
+    
+}
+.projectContainer:hover h2{
+    color:white
+}
+.projectContainer img {
+  object-fit: cover;
+}
