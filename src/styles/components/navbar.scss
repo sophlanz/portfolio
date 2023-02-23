@@ -35,11 +35,16 @@ nav{
 .right li {
     display:flex;
     justify-content:space-evenly;
-    font-family:"Branch";
     font-size:3rem;
     width:500px;
     font-weight:700;
-   color:white;
+   
+}
+.right li a{
+    -webkit-text-stroke-width: 0.5px;
+   -webkit-text-stroke-color: white;
+   color: black;
+   font-size: 4rem;
 }
 /*when one element is hovered, change color and blur others*/
 .right:hover  li{
