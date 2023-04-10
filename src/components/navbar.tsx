@@ -19,6 +19,9 @@ export default function NavBar () {
         setDisplayList([])
     }
     const listItems: JSX.Element [] = [  
+      <li>
+           <Link onClick ={closeModal}  href='/'>HOME</Link>
+        </li>,
         <li> 
             <Link onClick ={closeModal} href='/projects'>PROJECTS</Link>
         </li>,
@@ -27,7 +30,9 @@ export default function NavBar () {
         </li>,
         <li >
               <Link onClick ={closeModal} href='/contact'>CONTACT</Link>
-        </li>];
+        </li>,
+        
+        ];
     let index: number=0;
     useEffect(() => {
         const interval = setInterval(() => {
