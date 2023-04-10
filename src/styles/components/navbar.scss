@@ -20,7 +20,7 @@ button.menuToggle{
    background:none;
    border:none;
    color:white;
-   font-family:"Cotta";
+   font-family:"Migha";
    font-size:2rem;
    font-weight:bolder;
    position:absolute;
@@ -40,35 +40,30 @@ nav{
     font-weight:700;
    
 }
-.right li a{
-    -webkit-text-stroke-width: 0.5px;
-   -webkit-text-stroke-color: white;
-   color: black;
+.right li {
+   color:transparent;
    font-size: 4rem;
+   font-family:"Telegraf-UltraBold";
+    color:$blue;
+  
 }
 /*when one element is hovered, change color and blur others*/
 .right:hover  li{
-  
     opacity:.5;
-    
-    
 }
-.right li:hover{
-    opacity:1;
-   
-}
+
 //change half to white other half to green on hover
 .right li:hover{
-    color:white;
-    transition:.5s ease-in
+    opacity:2;
 }
-nav ul .right li:hover span{
-  color:wheat;
-  transition:.5s ease-in
-}
+
 .right{
     position:absolute;
     top:60%;
     /*so menu elements load left to right*/
     left:0%;
+}
+ul .right{
+    width: 100vw;
+    justify-content: center;
 }

@@ -20,13 +20,13 @@ export default function NavBar () {
     }
     const listItems: JSX.Element [] = [  
         <li> 
-            <Link onClick ={closeModal} href='/projects'><span>P</span>R<span>O</span>J<span>E</span>C<span>T</span>S</Link>
+            <Link onClick ={closeModal} href='/projects'>PROJECTS</Link>
         </li>,
         <li >
-             <Link onClick ={closeModal} href='/about'>A<span>B</span>O<span>U</span>T</Link>
+             <Link onClick ={closeModal} href='/about'>ABOUT</Link>
         </li>,
         <li >
-              <Link onClick ={closeModal} href='/contact'><span>C</span>O<span>N</span>T<span>A</span>C<span>T</span></Link>
+              <Link onClick ={closeModal} href='/contact'>CONTACT</Link>
         </li>];
     let index: number=0;
     useEffect(() => {
@@ -47,11 +47,11 @@ console.log(displayList)
   return (
     <nav>
         <ul>
-            <div className="left">
+          {/*   <div className="left">
                  <li>
-                     <Link href='/'><span>S<span>o</span>phia</span><span>Lanzend<span>o</span>rf</span></Link>
+                     <Link href='/'><span>Sophia</span>Lanzendorf</Link>
                  </li>
-            </div>
+            </div> */}
             <button className="menuToggle" onClick={openModal}>MENU</button>
             <Modal
              isOpen={modalIsOpen}

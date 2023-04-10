@@ -1,35 +1,34 @@
-.firstLastName{
+header.firstLastName{
     position:absolute;
-    top:40%;
-    left:10%;
+    top:25%;
+    left:3%;
+    display:flex;
+    flex-direction:column;
+    font-style:italic;
+    font-family:"migha";
 }
 .firstLastName h1 span {
-    color:wheat;
+    font-family:"migha"
 }
 header h1.first {
-    font-family:'Branch';
+  
     font-size:12rem;
-    position:absolute;
-    left:52%;
-    top:-80%;
     color:white;
    
 }
 header h1.last{
-    font-family:'Branch';
+ 
     font-size:12rem;
     color:white;
 }
 .nameTitle h3 {
-    font-family:"Cotta";
-    font-size:3rem;
-    width:12rem;
-    margin-top:55px;
+    font-size:4.2rem;
+    width:640px;
     margin-left:20px;
-    color:wheat;
-    border-bottom: 2px solid white;
-    height:100px;
+    color:white;
+    border-bottom: 2px solid $blue;
 }
 .nameTitle {
     display:flex;
+    flex-direction:column;
 }
