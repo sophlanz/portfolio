@@ -1,11 +1,12 @@
 import React, {useState,useEffect} from 'react';
 import Link from 'next/link';
 import Modal from 'react-modal';
+import Cursor from './curosor'
 /* const MenuOpen = createContext<boolean>(false) */
 
 export default function NavBar () {
     const [modalIsOpen, setIsOpen] = useState<boolean>(false);
-    const [displayList, setDisplayList] = useState<JSX.Element[]>([]);
+    const [displayList, setDisplayList] = useState<JSX.Element[]>();
   
     
     const openModal= () => {
@@ -51,12 +52,6 @@ console.log(displayList)
 
   return (
     <nav>
-        <ul>
-          {/*   <div className="left">
-                 <li>
-                     <Link href='/'><span>Sophia</span>Lanzendorf</Link>
-                 </li>
-            </div> */}
             <button className="menuToggle" onClick={openModal}>MENU</button>
             <Modal
              isOpen={modalIsOpen}
@@ -71,7 +66,7 @@ console.log(displayList)
                     {displayList}
                 </div>
            </Modal> 
-        </ul>
+        
     </nav>
   );
 };

@@ -7,6 +7,22 @@ header.firstLastName{
     font-style:italic;
     font-family:"migha";
 }
+header.firstLastName:hover ~ .cursorCircle{
+height:160px;
+width:160px;
+
+}
+header.firstLastName:hover ~ .cursorCircle::before{
+    content:"HELLO, I'M";
+    display: block;
+    width: 100%;
+    text-align: center; 
+    font-family:"migha";
+    position:absolute;
+    top:60px;
+    font-size:2rem;
+    color:white;
+}
 .firstLastName h1 span {
     font-family:"migha"
 }
@@ -44,10 +60,9 @@ header h1.last{
     height:20px;
     width:20px;
     border-radius:50%;
-    position:absolute;
+    position:fixed;
     transform:translate(-50%,-50%);
     pointer-events:none;
-    z-index:2;
     mix-blend-mode: difference;
 }
 
@@ -57,11 +72,7 @@ header h1.last{
     height:100vh;
 }
 
-button.menuToggle:hover{
-    color:$blue;
-    transition:color ease-in-out .5s;
-    mix-blend-mode: difference;
-}
+
 .cursorContainer{
     height:100vh;
     width:100vw;

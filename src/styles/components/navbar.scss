@@ -1,8 +1,10 @@
-nav ul{
-    display:flex;
+nav {
     color:white;
     width:100%;
-    justify-content: space-between;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    width:70px
 }
 
 
@@ -64,10 +66,23 @@ nav{
     left:0%;
     width:100vw;
 }
-ul .right{
+nav .right{
     width: 100vw;
     justify-content: center;
 }
 svg {
     background-color:black;
+}
+button.menuToggle:hover{
+    color:$blue;
+    transition:color ease-in-out .5s;
+    mix-blend-mode: difference;
+}
+nav button.menuToggle:hover  ~ .cursorContainer .cursorCircle {
+    height:40px;
+    width:40px;
+}
+nav:hover ~ .cursorCircle{
+    height:50px;
+    width:50px;
 }
