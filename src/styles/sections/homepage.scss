@@ -11,11 +11,17 @@ header.firstLastName{
     font-family:"migha"
 }
 header h1.first {
-  
     font-size:12rem;
     color:white;
-   
 }
+
+header h1.first:hover, header h1.last:hover,.nameTitle h3:hover{
+    color:transparent;
+    -webkit-text-stroke-width: 0.1rem;
+    -webkit-text-stroke-color: white;
+}
+
+
 header h1.last{
  
     font-size:12rem;

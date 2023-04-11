@@ -32,6 +32,10 @@ export default function Projects() {
                          style={{objectPosition:"top left"}}
                           />
                      </div>
+                     <div className="svgs">
+                          <a href="https://github.com/sophlanz/translate-deepL" target="_blank"><img src='/svgs/github.svg' alt="github"/></a>
+                          <a href="https://ai-lengua.vercel.app/" target="_blank"><img src='/svgs/link.svg' alt="link"/></a>
+                          </div>
             </div>
             <div className="projectContainer">
                     <h2>Excursion E-Commerce</h2>
@@ -43,7 +47,12 @@ export default function Projects() {
                          height={570}
                          style={{objectPosition:"top left"}}
                           />
+                          
                      </div>
+                     <div className="svgs">
+                          <a href="https://github.com/sophlanz/ecommerce-travel"target="_blank"><img src='/svgs/github.svg' alt="github"/></a>
+                          <a href="https://ecommerce-travel.vercel.app/" target="_blank"><img src='/svgs/link.svg' alt="link"/></a>
+                          </div>
             </div>
             <div className="projectContainer">
                     <h2>CV Generator</h2>
@@ -55,6 +64,10 @@ export default function Projects() {
                         height={570}
                      />
                      </div>
+                     <div className="svgs">
+                          <a href="https://github.com/sophlanz/cv-generator" target="_blank"><img src='/svgs/github.svg' alt="github"/></a>
+                          <a href="https://cv-curator.up.railway.app/" target="_blank"><img src='/svgs/link.svg' alt="link"/></a>
+                          </div>
             </div>
             <div className="projectContainer">
                     <h2>Weather App</h2>
@@ -66,6 +79,10 @@ export default function Projects() {
                         height={570}
                          />
                      </div>
+                     <div className="svgs">
+                          <a href="https://github.com/sophlanz/weatherApp" target="_blank"><img src='/svgs/github.svg' alt="github"/></a>
+                          <a href="https://weather-app-sophlanz.netlify.app/" target="_blank"><img src='/svgs/link.svg' alt="link"/></a>
+                          </div>
             </div>
             <div className="projectContainer">
                     <h2>Restaurant Page</h2>
@@ -77,6 +94,10 @@ export default function Projects() {
                         height={570}
                          />
                      </div>
+                     <div className="svgs">
+                          <a href="https://github.com/sophlanz/restaurant-page" target="_blank"><img src='/svgs/github.svg' alt="github"/></a>
+                          <a href="https://sophlanz.github.io/restaurant-page/" target="_blank"><img src='/svgs/link.svg' alt="link"/></a>
+                          </div>
             </div>
             <div className="projectContainer">
                     <h2>Etch A Sketch</h2>
@@ -88,6 +109,10 @@ export default function Projects() {
                         height={570}
                          />
                     </div>
+                    <div className="svgs">
+                          <a href="https://github.com/sophlanz/etch-a-sketch" target="_blank"><img src='/svgs/github.svg' alt="github"/></a>
+                          <a href="https://sophlanz.github.io/etch-a-sketch/" target="_blank"><img src='/svgs/link.svg' alt="link"/></a>
+                          </div>
             </div>
         </div>
         </div>
