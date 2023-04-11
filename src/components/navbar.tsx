@@ -41,7 +41,7 @@ export default function NavBar () {
           if (index >= listItems.length) {
             clearInterval(interval);
           }
-        }, 1000);
+        }, 250);
     
         return () => {
           clearInterval(interval);

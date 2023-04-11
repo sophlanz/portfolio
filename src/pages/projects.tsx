@@ -20,13 +20,13 @@ export default function Projects() {
         
         <div className="projects">
         <div className="projectsContainer" ref={projectsContainerRef}>
-        <h1 className="project">  PROJECTS</h1>
+        <h1 className="project"><span style={{fontFamily:"Telegraf-UltraLight"}}>P</span><span style={{fontFamily:"Telegraf-Regular"}}>RO</span><span style={{fontFamily:"Telegraf-UltraBold"}}>JECTS</span></h1>
             <div className="projectContainer">
-                    <h2>Excursion Escape</h2>
+                    <h2>AI Language Learning</h2>
                     <div className="imgContainer">
                          <Image
-                         src="/ImagesProjects/excursionEscape.png"
-                         alt="Picture of the author"
+                         src="/ImagesProjects/aiLengua.png"
+                         alt="AI langauge learning app"
                          width={450}
                          height={570}
                          style={{objectPosition:"top left"}}
@@ -34,11 +34,23 @@ export default function Projects() {
                      </div>
             </div>
             <div className="projectContainer">
-                    <h2>CV-Generator</h2>
+                    <h2>Excursion E-Commerce</h2>
+                    <div className="imgContainer">
+                         <Image
+                         src="/ImagesProjects/excursionEscape.png"
+                         alt="Excursion escape app"
+                         width={450}
+                         height={570}
+                         style={{objectPosition:"top left"}}
+                          />
+                     </div>
+            </div>
+            <div className="projectContainer">
+                    <h2>CV Generator</h2>
                     <div className="imgContainer">
                         <Image
                         src="/ImagesProjects/cvCurator.png"
-                        alt="Picture of the author"
+                        alt="CV generator App"
                         width={450}
                         height={570}
                      />
@@ -49,7 +61,7 @@ export default function Projects() {
                     <div className="imgContainer">
                         <Image
                         src="/ImagesProjects/weatherApp.png"
-                        alt="Picture of the author"
+                        alt="Weather App"
                         width={450}
                         height={570}
                          />
@@ -60,18 +72,18 @@ export default function Projects() {
                     <div className="imgContainer">
                         <Image
                         src="/ImagesProjects/restaurantPage.png"
-                        alt="Picture of the author"
+                        alt="Restaurant App"
                         width={450}
                         height={570}
                          />
                      </div>
             </div>
             <div className="projectContainer">
-                    <h2>Etch-A-Sketch</h2>
+                    <h2>Etch A Sketch</h2>
                     <div className="imgContainer">
                         <Image
                         src="/ImagesProjects/etchSketch.png"
-                        alt="Picture of the author"
+                        alt="Etch A Sketch App"
                         width={450}
                         height={570}
                          />

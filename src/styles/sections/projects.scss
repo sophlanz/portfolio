@@ -7,21 +7,15 @@
 .projectContainer {
     display:flex;
     flex-direction:column;
-    margin-left:30px;
-    margin-top:150px;
+    margin-left:20px;
+    margin-top:350px;
     
 }
 h1.project {
-    color:white;
+    color:$blue;
     font-size:4rem;
-    margin-top: 10px;
-    margin-bottom: 100px;
     display: flex;
-    justify-content: center;
     width: 100vw;
-    text-decoration-line: underline;
-    text-decoration-thickness: 5px;
-    text-decoration-color: $blue;
     position:absolute;
 }
 .projects {
@@ -32,42 +26,47 @@ h1.project {
 
 .projectContainer h2{
     font-size:3rem;
-    color:white;
+    color:transparent;
     margin-bottom:50px;
     font-weight:bolder;
-    
+    font-familY:"Telegraf-UltraBold"; 
+    position: absolute;
+    top: 30%;
+    left: 5%;
 }
 .projectContainer:hover h2{
-    color:white
+   color:white;
 
 }
 .imgContainer{
-    width:450px;
-     height:570px;
+    width:410px;
+     height:550px;
      overflow:hidden;
-     border-radius:1rem;
+     
+
+}
+.imgContainer:hover .projContainer h2{
+    color:transparent;
+    -webkit-text-stroke: 1px white;
 }
 .projectContainer img {
   object-fit: cover;
-  border-radius:1em;
   width: 100%;
     transition: transform 0.4s ease;
     transform-origin: 50% 50%;
 
 }
 
-
-
 .projectContainer img:hover{
     transform: scale(1.2);
     width: 100%;
+
 }
 
 .projectContainer img::before{
     content: '';
     z-index:1;
-    background: rgba(0, 0, 0, 0.5);
-    
+    background: rgba(0, 0, 0, 0.8); 
 }
 img{
     overflow:hidden;
