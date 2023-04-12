@@ -80,17 +80,28 @@ header h1.last{
     pointer-events:none;
     mix-blend-mode: difference;
 }
-
-
 .homepageContainer{
     width:100vw;
     height:100vh;
 }
-
-
 .cursorContainer{
     height:100vh;
     width:100vw;
+}
+.loaderHello{
+    font-size:5rem;
+    font-family:'Telegraf-UltraBold';
+}
+.loadingContainer{
+    width:100vw;
+    height:100vh;
+    position:relative;
+    z-index:2;
+    background-color:black;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
 @keyframes transitionWordsA{
     0%{color:transparent;
