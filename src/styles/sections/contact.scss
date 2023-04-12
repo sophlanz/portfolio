@@ -30,6 +30,9 @@ form.contact button{
     font-family:"Migha";
     margin-top:50px;
     animation:changeColor 4s;
+    position:absolute;
+    top:60%;
+    left:55%;
 }
 form.contact button:hover{
     background-color:black;
