@@ -1,0 +1,48 @@
+form.contact{
+    display:flex; 
+    flex-direction:column;
+    margin-top:50px;
+}
+form.contact label{
+    font-size:4rem;
+    color:white;
+    font-family:'Branch'
+}
+input{
+    border:none;
+    border-bottom:2px solid $blue;
+    outline:0;
+    background:none;
+    width:400px;
+    color:white;
+    font-size:2rem;
+    font-family:"Cotta"
+}
+form.contact button{
+    background-color:$blue;
+    border-radius:50%;
+    border:none;
+    height:300px;
+    width:300px;
+    font-size:3rem;
+    font-family:"Migha";
+    margin-top:50px;
+}
+form.contact button:hover{
+    background-color:black;
+    border:$blue 2px solid;
+    color:$blue;
+    float:left;
+    cursor:pointer;
+}
+.contactGreeting{
+    color:$blue;
+    font-size:7rem;
+
+}
+.contactContainer{
+    display:flex;
+    flex-direction:column;
+    padding-left:50px;
+    padding-top:200px;
+}
