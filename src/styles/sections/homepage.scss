@@ -1,3 +1,8 @@
+.animationHomePageClass{
+    animation-name:transitionWords;
+    animation-duration:4s;
+    transition:ease-out;
+}
 header.firstLastName{
     position:absolute;
     top:25%;
@@ -6,6 +11,7 @@ header.firstLastName{
     flex-direction:column;
     font-style:italic;
     font-family:"migha";
+  
 }
 header.firstLastName:hover ~ .cursorCircle{
 height:160px;
@@ -30,6 +36,8 @@ header h1.first {
     font-size:12rem;
     color:white;
     width: 660px;
+    @extend .animationHomePageClass
+   
 }
 
 header h1.first:hover, header h1.last:hover,.nameTitle h3:hover{
@@ -43,6 +51,7 @@ header h1.last{
  
     font-size:12rem;
     color:white;
+    @extend .animationHomePageClass
 }
 .nameTitle h3 {
     font-size:4.2rem;
@@ -50,6 +59,7 @@ header h1.last{
     margin-left:20px;
     color:white;
     border-bottom: 2px solid $blue;
+    @extend .animationHomePageClass
 }
 .nameTitle {
     display:flex;
@@ -76,4 +86,10 @@ header h1.last{
 .cursorContainer{
     height:100vh;
     width:100vw;
+}
+@keyframes transitionWords{
+    from{color:transparent;
+        -webkit-text-stroke-width: 0.1rem;
+        -webkit-text-stroke-color: white;}
+        to{ color:white;}
 }
