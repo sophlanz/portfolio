@@ -1,9 +1,7 @@
 import React, {useState,useEffect} from 'react';
 import Link from 'next/link';
 import Modal from 'react-modal';
-import Cursor from './curosor'
-/* const MenuOpen = createContext<boolean>(false) */
-
+import uniqid from 'uniqid';
 export default function NavBar () {
     const [modalIsOpen, setIsOpen] = useState<boolean>(false);
     const [displayList, setDisplayList] = useState<JSX.Element[]>();
@@ -20,16 +18,16 @@ export default function NavBar () {
         setDisplayList([])
     }
     const listItems: JSX.Element [] = [  
-      <li>
+      <li key={uniqid()}>
            <Link onClick ={closeModal}  href='/'>HOME</Link>
         </li>,
-        <li> 
+        <li key={uniqid()}> 
             <Link onClick ={closeModal} href='/projects'>PROJECTS</Link>
-        </li>,
-        <li >
+        </li >,
+        <li key={uniqid()} >
              <Link onClick ={closeModal} href='/about'>ABOUT</Link>
         </li>,
-        <li >
+        <li key={uniqid()}>
               <Link onClick ={closeModal} href='/contact'>CONTACT</Link>
         </li>,
         
@@ -61,7 +59,7 @@ console.log(displayList)
              className="Modal"
              overlayClassName="Overlay"
            >
-                <button className="menuToggle"  onClick={closeModal}>CLOSE</button>
+                <button className="menuToggle"  onClick={closeModal} style={{ position: "absolute", top: "20px", right: "30px", width:"70px"}}>CLOSE</button>
                 <div className="right" style={{display: modalIsOpen===true ? "flex" : "none"}}>
                     {displayList}
                 </div>
