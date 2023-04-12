@@ -68,7 +68,6 @@ console.log(displayList)
                     {displayList}
                 </div>
            </Modal> 
-        
     </nav>
   );
 };

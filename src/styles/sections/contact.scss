@@ -20,6 +20,19 @@ input{
     font-size:2rem;
     font-family:"Cotta"
 }
+
+/* Change the white to any color ;) */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  {
+    -webkit-box-shadow: 0 0 0 
+    30px black inset !important;
+}
+/*Change text in autofill textbox*/
+input:-webkit-autofill {
+    -webkit-text-fill-color: white !important;
+}
 form.contact button{
     background-color:$blue;
     border-radius:50%;
@@ -50,7 +63,27 @@ form.contact button:hover{
     display:flex;
     flex-direction:column;
     padding-left:50px;
-    padding-top:200px;
+    padding-top:50px;
+}
+.contactGreeting {
+    margin-top:200px;
+    margin-left:50px;
+
+}
+.contactGreeting:hover  ~  .cursorCircle {
+    height:250px;
+    width:250px;
+}
+.contactGreeting:hover  ~  .cursorCircle::after{
+    content:"I DON'T BITE 🤩";
+    display: block;
+    width: 100%;
+    text-align: center; 
+    font-family:"migha";
+    position:absolute;
+    top:110px;
+    font-size:2rem;
+    color:white;;
 }
 @keyframes changeColor{
     from{ background-color:transparent; border:2px solid $blue; border-radius:50%}
