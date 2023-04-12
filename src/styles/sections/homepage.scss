@@ -90,7 +90,12 @@ header h1.last{
 }
 .loaderHello{
     font-size:5rem;
-    font-family:'Telegraf-UltraBold';
+    font-family:'Branch';
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    color:$blue;
 }
 .loadingContainer{
     width:100vw;
@@ -98,10 +103,8 @@ header h1.last{
     position:relative;
     z-index:2;
     background-color:black;
-    color:white;
-    display:flex;
-    justify-content:center;
-    align-items:center;
+    transition: display 2s ease-in-out;
+    
 }
 @keyframes transitionWordsA{
     0%{color:transparent;

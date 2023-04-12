@@ -35,18 +35,13 @@ nav{
 .right li {
     display:flex;
     justify-content:space-evenly;
-    font-size:3rem;
     width:500px;
     font-weight:700;
-   
+    font-size: 4rem;
+    font-family:"Telegraf-UltraBold";
+     color:$blue;
 }
-.right li {
-   color:transparent;
-   font-size: 4rem;
-   font-family:"Telegraf-UltraBold";
-    color:$blue;
-  
-}
+
 /*when one element is hovered, change color and blur others*/
 .right:hover  li{
     opacity:.5;

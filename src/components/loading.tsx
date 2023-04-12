@@ -3,7 +3,7 @@ interface Props{
   sendToParent?: React.Dispatch<React.SetStateAction<string>>
 }
 export default function LoadingScreen (props:Props) {
-  const words =['hello','hola','bonjour','olá'," Nǐn hǎo", 'sa-wat-dee-ka'];
+  const words =['hola','bonjour','olá'," Nǐn hǎo", 'hello','sa-wat-dee-ka',"Ciao","Konnichiwa", 'Guten Tag','Namaste, Namaskar'];
   const [word,setWord] = useState<string>();
   const [display,setDisplay]=useState<string>('block')
 //get random word
@@ -11,7 +11,7 @@ export default function LoadingScreen (props:Props) {
     useEffect(()=> {
       let count=0;
        const interval= setInterval(()=> {
-          if(count >6) {
+          if(count >10) {
             clearInterval(interval)
             setDisplay('none');
             if(props.sendToParent){
@@ -20,7 +20,7 @@ export default function LoadingScreen (props:Props) {
           }
             setWord(words[count])
             count++
-        },1000)
+        },150)
     },[])
   return (
      <div className="loadingContainer" style={{display:display}}>
