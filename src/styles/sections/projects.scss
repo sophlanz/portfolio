@@ -9,7 +9,8 @@
     flex-direction:column;
     margin-left:20px;
     margin-top:400px;
-    
+    transform-origin:top;
+    animation:transitionY 2s;
 }
 h1.project {
     color:$blue;
@@ -19,6 +20,7 @@ h1.project {
     position:absolute;
     margin-top:40px;
     width: 350px;
+    animation:transitionDown 2s;
 }
 .projects {
     display:flex;
@@ -42,10 +44,8 @@ h1.project {
 }
 .imgContainer{
     width:410px;
-     height:550px;
-     overflow:hidden;
-     
-
+    height:550px;
+    overflow:hidden;
 }
 .imgContainer:hover .projContainer h2{
     color:transparent;
@@ -54,8 +54,8 @@ h1.project {
 .projectContainer img {
   object-fit: cover;
   width: 100%;
-    transition: transform 0.4s ease;
-    transform-origin: 50% 50%;
+  height:100%;
+
 }
 
 .projectContainer img:hover{
@@ -93,3 +93,17 @@ img{
     display:none;
 }
 
+@keyframes transitionDown{
+    from{ margin-top:0px }
+    to{ margin-top:40px }
+}
+@keyframes transitionY{
+    from{ transform:scaleY(0) }
+    to{ transform:scaleY(1) }
+}
+//give diff delay to eag element
+@for $i from 1 through 6 {
+    .projectContainer:nth-child(#{$i}n) {
+        animation-delay: #{$i * 0.1}s;
+    }
+}

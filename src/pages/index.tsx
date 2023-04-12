@@ -1,4 +1,5 @@
-import LoadingScreen from "../components/loading"
+import LoadingScreen from "../components/loading";
+import Navbar from '../components/navbar';
 import { useState } from 'react';
 export default function Home() {
   const [display,setDisplay] = useState<string>('none');
@@ -6,6 +7,7 @@ export default function Home() {
   return(
     <>   
       <LoadingScreen sendToParent={setDisplay}/>
+      <Navbar style={display}/>
         <header className="firstLastName" style={{display:display}}>
             <h1 className="first" ><span data-text="S" style={{fontFamily:"Telegraf-UltraLight"}}>S</span><span style={{fontFamily:"Telegraf-Regular"}}>o</span><span style={{fontFamily:"Telegraf-UltraBold"}}>phia</span></h1>
             <div className="nameTitle">

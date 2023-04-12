@@ -27,6 +27,7 @@ button.menuToggle{
    font-size:2rem;
    font-weight:bolder;
    cursor:pointer;
+   animation:fromRightToLeft 2s;
 }
 nav{
     padding:20px 30px;
@@ -78,4 +79,8 @@ nav button.menuToggle:hover  ~ .cursorContainer .cursorCircle {
 nav:hover ~ .cursorCircle{
     height:50px;
     width:50px;
+}
+@keyframes fromRightToLeft{
+    from{ margin-left:100px }
+    to{ margin-right:0px }
 }

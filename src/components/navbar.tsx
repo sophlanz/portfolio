@@ -2,9 +2,13 @@ import React, {useState,useEffect} from 'react';
 import Link from 'next/link';
 import Modal from 'react-modal';
 import uniqid from 'uniqid';
-export default function NavBar () {
+interface Props{
+  style?:string
+}
+export default function NavBar (props:Props) {
     const [modalIsOpen, setIsOpen] = useState<boolean>(false);
     const [displayList, setDisplayList] = useState<JSX.Element[]>();
+    const display=props.style ? props.style : 'block' ;
   
     
     const openModal= () => {
@@ -49,7 +53,7 @@ export default function NavBar () {
 console.log(displayList)
 
   return (
-    <nav>
+    <nav style={{display:display}}>
             <button className="menuToggle" onClick={openModal}>MENU</button>
             <Modal
              isOpen={modalIsOpen}

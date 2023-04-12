@@ -2,7 +2,7 @@ import '@/styles/globals.scss'
 import type { AppProps } from 'next/app'
 import NavBar from '../components/navbar';
 import Cursor from '../components/curosor';
-/* import LoadingScreen  from '../components/loading'; */
+import LoadingScreen  from '../components/loading';
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 export default function App({ Component, pageProps }: AppProps) {
@@ -35,14 +35,13 @@ export default function App({ Component, pageProps }: AppProps) {
     {
       !loading ?
       <div className="cursorContainer"onMouseMove={(e)=> setCursor(e)}>
-      <NavBar/>
       <Component {...pageProps} />
         {/*circle that will follow cursor */}
         <span className="cursorCircle" style={{left:`${left}`, top:`${right}`}}></span>
     </div>
     :
     <div className="cursorContainer"onMouseMove={(e)=> setCursor(e)}>
-     {/*  <LoadingScreen/> */}
+      <LoadingScreen/> 
     </div>
     }
    </>
