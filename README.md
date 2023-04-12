@@ -1,5 +1,5 @@
 # Portfolio
-## Live Demo: Coming Soon!
+## Live Demo: https://sophialanzendorf.vercel.app/
 ## Description
 Portfolio website to showcase my projects in a more cohesive, artistic way than github.  
 ## Tools and Technologies 
