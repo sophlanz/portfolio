@@ -50,7 +50,6 @@ export default function NavBar (props:Props) {
           clearInterval(interval);
         };
       }, [modalIsOpen]);
-console.log(displayList)
 
   return (
     <nav style={{display:display}}>

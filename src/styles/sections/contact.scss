@@ -54,6 +54,12 @@ form.contact button:hover{
     float:left;
     cursor:pointer;
 }
+form.contact p{
+    color:$blue;
+    font-size:1.5rem;
+    font-family:"Branch";
+    margin-top:20px;
+}
 .contactGreeting{
     color:$blue;
     font-size:7rem;

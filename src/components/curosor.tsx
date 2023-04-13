@@ -9,9 +9,7 @@ export default function Cursor () {
         const x = e.pageX;
             const y = e.pageY;
             setLeft(`${x}px`)
-            console.log(left)
-            setRight(`${y}px`)
-            console.log(right)
+            setRight(`${y}px`)   
     };
  
   return (

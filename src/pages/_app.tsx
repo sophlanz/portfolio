@@ -17,9 +17,7 @@ export default function App({ Component, pageProps }: AppProps) {
      const x = e.pageX;
          const y = e.pageY;
          setLeft(`${x}px`)
-         console.log(left)
          setRight(`${y}px`)
-         console.log(right)
  };
  useEffect(()=> {
   const handleStart = () => {setLoading(true)};
@@ -29,7 +27,6 @@ export default function App({ Component, pageProps }: AppProps) {
   router.events.on('routeChangeError', handleComplete)
 
  },[router]);
- console.log(loading);
   return (
     <>
     {
