@@ -5,6 +5,7 @@ import Cursor from '../components/curosor';
 import LoadingScreen  from '../components/loading';
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
+import Socials from '../components/socials';
 export default function App({ Component, pageProps }: AppProps) {
   //loading 
   const [loading, setLoading]= useState<boolean>(false);
@@ -32,6 +33,7 @@ export default function App({ Component, pageProps }: AppProps) {
     {
       !loading ?
       <div className="cursorContainer"onMouseMove={(e)=> setCursor(e)}>
+      <Socials/>
       <Component {...pageProps} />
         {/*circle that will follow cursor */}
         <span className="cursorCircle" style={{left:`${left}`, top:`${right}`}}></span>

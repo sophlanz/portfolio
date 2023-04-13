@@ -7,14 +7,12 @@ Portfolio website to showcase my projects in a more cohesive, artistic way than 
 - React
 - Typescript
 - SCSS
-
+- SendGrid
 ## Features 
 - Carousel mouse wheel to view projets.
 - Advanced transitions and animations.
-
+- SendGrid for sending emails.
 ## Future Updates
-- About Page
-- Sendgrid integration on Contact Page
 - 404 Page
 - Mobile Design
 ## Screenshots Web
