@@ -1,0 +1,48 @@
+.aboutContainer{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    padding-top:150px;
+    margin-left:50px;
+    margin-right:50px;
+}
+section.quoteContainer{
+    grid:1/2
+}
+ section.aboutMe{
+   grid:2/3
+}
+section.quoteContainer{
+    font-size:2.5rem;
+    font-family:"Branch";
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-style:italic;
+}
+.quoteContainer h1{
+    color:white;
+    line-height:1.5em;
+}
+.quoteContainer h2{
+    color:$blue;
+    margin-top:30px;
+}
+section.aboutMe{
+    margin-left:50px;
+    margin-right:50px;
+}
+section.aboutMe h1{
+    font-size:5rem;
+    font-family:"Migha";
+    color:$blue;
+    margin-bottom:30px;
+}
+section.aboutMe p{
+    font-size:2rem;
+    font-family:"Telegraf-UltraLight";
+    color:white;
+    line-height:1.6em;
+    word-spacing: 5px;
+}
