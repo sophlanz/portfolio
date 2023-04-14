@@ -1,7 +1,5 @@
 .aboutContainer{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    padding-top:150px;
+    padding-top:100px;
     margin-left:50px;
     margin-right:50px;
 }
@@ -24,6 +22,8 @@ section.quoteContainer{
 .quoteContainer h1{
     color:white;
     line-height:1.5em;
+    width:550px;
+    padding-top:50px;
 }
 .quoteContainer h2{
     color:$blue;
@@ -45,4 +45,6 @@ section.aboutMe p{
     color:white;
     line-height:1.6em;
     word-spacing: 5px;
+    max-width: 1300px;
+    min-width:600px;
 }

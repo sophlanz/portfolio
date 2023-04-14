@@ -10,6 +10,10 @@
     justify-content: center;
     align-items: center;
     font-size:3rem;
+    background-color: rgba(0,0,0,0.7);
+ /*    box-shadow:0 0 0 30px black;
+    -webkit-box-shadow: 0 0 0 
+    30px black inset !important; */
 }
 //animation to blur in blackdrop filter
 @keyframes blur-in {

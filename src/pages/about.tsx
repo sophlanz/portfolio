@@ -4,10 +4,6 @@ export default function About() {
         <>
         <Navbar/>
         <div className="aboutContainer">
-            <section className="quoteContainer">
-                <h1>&quot;The most common way people give up their power is by thinking they don&apos;t have any.&quot; </h1>
-                <h2>- Alice Walker</h2>
-            </section>
             <section className="aboutMe">
                 <h1>Sophia</h1>
                 <p>
@@ -19,6 +15,10 @@ export default function About() {
                  thrilling, and  <span style={{color:'#2217f1', fontFamily:"Telegraf-UltraBold"}}> I thrive off of learning </span> and implementing the technologies required to <span style={{color:'#2217f1', fontFamily:"Telegraf-UltraBold"}}>solve</span> it. When I&apos;m not programming or practicing DSA
                  I enjoy learning <span style={{color:'#2217f1', fontFamily:"Telegraf-UltraBold"}}> languages </span>, spending time in <span style={{color:'#2217f1', fontFamily:"Telegraf-UltraBold"}}> nature </span>, and cooking  <span style={{color:'#2217f1', fontFamily:"Telegraf-UltraBold"}}> Thai food </span>. 
                 </p>
+            </section>
+            <section className="quoteContainer">
+                <h1>&quot;The most common way people give up their power is by thinking they don&apos;t have any.&quot; </h1>
+                <h2>- Alice Walker</h2>
             </section>
         </div>
         </>
