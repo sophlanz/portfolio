@@ -34,6 +34,9 @@ export default function NavBar (props:Props) {
         <li key={uniqid()}>
               <Link onClick ={closeModal} href='/contact'>CONTACT</Link>
         </li>,
+        <li key={uniqid()}>
+           <Link onClick ={closeModal}  href='/resume'>RESUME</Link>
+        </li>
         
         ];
     let index: number=0;
