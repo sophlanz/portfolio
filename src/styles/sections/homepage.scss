@@ -88,6 +88,7 @@ header h1.last{
 .cursorContainer{
     height:100vh;
     width:100vw;
+    overflow-x:hidden;
 }
 .loaderHello{
     font-size:5rem;
