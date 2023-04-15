@@ -91,6 +91,26 @@ form.contact p{
     font-size:2rem;
     color:white;;
 }
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+    form.contact label{
+        font-size:1.6rem;
+    }
+    
+} 
+
+@media only screen and (max-width: 992px) {
+    form.contact label{
+        font-size:1.8rem;
+    }
+
+}
+@media only screen and (max-width: 1200px) {
+    form.contact label{
+        font-size:2.3em;
+    }
+
+}
 @keyframes changeColor{
     from{ background-color:transparent; border:2px solid $blue; border-radius:50%}
     to{ background-color:$blue };

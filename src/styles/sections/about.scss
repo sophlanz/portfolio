@@ -18,6 +18,7 @@ section.quoteContainer{
     padding-left: 50px;
     padding-right: 50px;
     font-style:italic;
+    padding-bottom: 50px;
 }
 .quoteContainer h1{
     color:white;
@@ -47,4 +48,13 @@ section.aboutMe p{
     word-spacing: 5px;
     max-width: 1300px;
     min-width:600px;
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px){
+    section.aboutMe p {
+        font-size:1.8rem;
+    }
+    .quoteContainer h1{
+        width:500px;
+    }
 }
