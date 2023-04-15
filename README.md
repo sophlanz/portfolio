@@ -12,9 +12,10 @@ Portfolio website to showcase my projects in a more cohesive, artistic way than 
 - Carousel mouse wheel to view projets.
 - Advanced transitions and animations.
 - SendGrid for sending emails.
+- Responsive Design
 ## Future Updates
 - 404 Page
-- Mobile Design
+
 ## Screenshots Web
 <img width="1728" alt="Captura de Pantalla 2023-04-11 a la(s) 8 08 31 p m" src="https://user-images.githubusercontent.com/75180391/231315003-08185025-9e01-410c-bcaf-7d63345dec9e.png">
 <img width="1728" alt="Captura de Pantalla 2023-04-13 a la(s) 3 51 01 p m" src="https://user-images.githubusercontent.com/75180391/231868079-963f30b6-ab57-4ed2-87ce-8786169af96a.png">
