@@ -6,6 +6,7 @@ import LoadingScreen  from '../components/loading';
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import Socials from '../components/socials';
+import Head from 'next/head';
 export default function App({ Component, pageProps }: AppProps): JSX.Element {
   //loading 
   const [loading, setLoading]= useState<boolean>(false);
@@ -32,16 +33,26 @@ export default function App({ Component, pageProps }: AppProps): JSX.Element {
     <>
     {
       !loading ?
+      <>
+      <Head>
+         <meta name="viewport" content="width=device-width, initial-scale=1 ,  maximum-scale=1, user-scalable=0"/>
+      </Head>
       <div className="cursorContainer"onMouseMove={(e)=> setCursor(e)}>
       <Socials/>
       <Component {...pageProps} />
         {/*circle that will follow cursor */}
         <span className="cursorCircle" style={{left:`${left}`, top:`${right}`}}></span>
     </div>
+    </>
     :
+    <>
+    <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1,  maximum-scale=1, user-scalable=0"/>
+    </Head>
     <div className="cursorContainer"onMouseMove={(e)=> setCursor(e)}>
-      <LoadingScreen/> 
+        <LoadingScreen/> 
     </div>
+    </>
     }
    </>
   )
