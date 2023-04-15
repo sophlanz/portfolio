@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { useState, useEffect } from 'react';
-export default function Socials () {
+export default function Socials ()  : JSX.Element{
     const[top,setTop]=useState<string>('50%');
     
     useEffect(()=> {

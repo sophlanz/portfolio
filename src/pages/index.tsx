@@ -2,7 +2,7 @@ import LoadingScreen from "../components/loading";
 import Navbar from '../components/navbar';
 import { useState } from 'react';
 import Socials from '../components/socials'
-export default function Home() {
+export default function Home(): JSX.Element {
   const [display,setDisplay] = useState<string>('none');
 
   return(

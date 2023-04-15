@@ -1,6 +1,6 @@
 import Navbar from '../components/navbar'
 import { useState } from 'react';
-export default function Contact() {
+export default function Contact(): JSX.Element {
     const[name,setName]= useState<string>('');
     const[email,setEmail]=useState<string>('');
     const[message,setMessage]=useState<string>('');

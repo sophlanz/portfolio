@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 interface Props{
   sendToParent?: React.Dispatch<React.SetStateAction<string>>
 }
-export default function LoadingScreen (props:Props) {
+export default function LoadingScreen (props:Props): JSX.Element {
   const words =['hola','bonjour','olá'," Nǐn hǎo", 'hello','sa-wat-dee-ka',"Ciao","Konnichiwa", 'Guten Tag','Namaste, Namaskar'];
   const [word,setWord] = useState<string>();
   const [display,setDisplay]=useState<string>('block')

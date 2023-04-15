@@ -1,5 +1,5 @@
 import Navbar from '../components/navbar';
-export default function About() {
+export default function About(): JSX.Element {
     return (
         <>
         <Navbar/>

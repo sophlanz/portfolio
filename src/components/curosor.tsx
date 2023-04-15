@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 
-export default function Cursor () {
+export default function Cursor (): JSX.Element {
       /*circle styles */
       const [left, setLeft] = useState<string>();
       const [right, setRight] = useState<string>();

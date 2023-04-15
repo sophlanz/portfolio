@@ -6,7 +6,7 @@ import LoadingScreen  from '../components/loading';
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import Socials from '../components/socials';
-export default function App({ Component, pageProps }: AppProps) {
+export default function App({ Component, pageProps }: AppProps): JSX.Element {
   //loading 
   const [loading, setLoading]= useState<boolean>(false);
   const router = useRouter();
