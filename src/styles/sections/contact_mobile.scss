@@ -1,0 +1,50 @@
+
+@media only screen and (max-width: 1025px) {
+
+} 
+@media only screen and (max-width: 920px) {
+
+} 
+@media only screen and (max-width: 820px) {
+    .contactGreeting:hover  ~  .cursorCircle {
+        height:40px;
+        width:40px
+    }
+    .contactGreeting:hover  ~  .cursorCircle::after{
+        content:""
+} 
+input {
+    width:250px;
+}
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .contactGreeting{
+        padding-left:10px;
+        padding-top:100px;
+        font-size:4rem;
+    }
+    form.contact button{
+        width:200px;
+        height:200px;
+        margin-left:5%;
+    }
+    input{
+        width:300px;
+    }
+    .contactContainer{
+        padding-left:30px;
+        padding-right:30px;
+        width:80%;
+
+    }
+
+} 
+
+@media only screen and (max-width: 360px) {
+
+} 
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 290px) {
+
+} 
