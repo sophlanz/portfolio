@@ -1,0 +1,104 @@
+
+@media only screen and (max-width: 1025px) {
+    .imgContainer{
+        height:300px;
+    }
+    .projectContainer{
+        margin-top:30%;
+    }
+    .svgs:hover {
+        display:none;
+    }
+    .imgContainer:hover ~ .svgs{
+        display:none;
+    }
+} 
+@media only screen and (max-width: 920px) {
+    .svgs:hover {
+        display:none;
+    }
+    .imgContainer:hover ~ .svgs{
+        display:none;
+    }
+    .projectContainer{
+        margin-top:50%;
+        height:60vh;
+    }
+    .projectContainer h2{
+        font-size:1.8rem;
+        top:20%;
+    }
+    .projectsContainer{
+        overflow-x:scroll;
+    }
+    .imgContainer{
+        height:850px;
+        width:70vw;
+    }
+    .projectContainer h2{
+        font-size:3rem;
+    }
+} 
+@media only screen and (max-width: 820px) {
+    .projectContainer{
+        margin-top:50%;
+        height:60vh;
+    }
+    .projectContainer h2{
+        font-size:1.8rem;
+        top:20%;
+    }
+    .projectsContainer{
+        overflow-x:scroll;
+    }
+    .imgContainer{
+        height:700px;
+        width:70vw;
+    }
+} 
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .projects{
+        margin-left:0px;
+    }
+        h1.project{
+            font-size:3rem;
+            margin-top:80px
+        }
+        .imgContainer{
+            width:80vw;
+            height: 70vh;
+            margin-top: 20px;
+        }
+        .projectContainer{
+            margin-top:70%
+        }
+} 
+@media only screen and (max-width: 550px){
+    .projectContainer{
+        margin-top:50%;
+    }
+} 
+
+@media only screen and (max-width: 380px) {
+   
+        .projectContainer{
+            margin-top:150px;
+            height:500px;
+        }
+        .imgContainer{
+            margin-top:10%;
+        }
+      
+} 
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 290px) {
+    .imgContainer{
+        margin-top:30%;
+        height:60vh;
+    }
+    .projectContainer h2{
+        font-size:1.4rem;
+        padding-top:20px;
+    }
+} 
