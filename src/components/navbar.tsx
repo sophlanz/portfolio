@@ -8,7 +8,7 @@ interface Props{
 export default function NavBar (props:Props): JSX.Element {
     const [modalIsOpen, setIsOpen] = useState<boolean>(false);
     const [displayList, setDisplayList] = useState<JSX.Element[]>();
-    const display=props.style ? props.style : 'block' ;
+    const display=props.style ? props.style : 'flex' ;
   
     
     const openModal= () => {

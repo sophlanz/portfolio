@@ -29,6 +29,11 @@
         margin-left:0px;
     }
 } 
+@media only screen and (max-width: 750px) {
+  /*   .cursorCircle{
+        visibility:hidden;
+    } */
+}
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     header h1.first,header h1.last{
