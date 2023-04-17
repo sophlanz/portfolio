@@ -85,7 +85,7 @@ nav:hover ~ .cursorCircle{
 label.themeToggle{
     width: 75px;
     height: 30px;
-    background: $red;
+    background: var(--accentColor);
     display: block;
     border-radius: 100px;
     position: relative;
@@ -103,7 +103,7 @@ label.themeToggle:after {
     transition: 0.3s;
 }
 nav input:checked + label.themeToggle{
-    background:$blue;
+    background:var(--accentColor);
 }
 nav input:checked + label.themeToggle:after {
 	left: calc(100% - 1px);
