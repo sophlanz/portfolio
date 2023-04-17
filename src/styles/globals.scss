@@ -3,6 +3,7 @@
 @import "layout/all";
 @import "components/all";
 @import "sections/all";
+@import"themes";
 
 @font-face {
     font-family: 'Abril Fatface';
@@ -49,3 +50,4 @@
     src: local('Telegraf-UltraLight'),
     url(../../public/fonts/Telegraf-UltraLight.ttf) format("truetype");
 }
+

@@ -1,0 +1,40 @@
+$blue:#2217f1;
+$linen:#f7eee3;
+$black:#1c1c1c;
+$red:#f13a38;
+$themes:(
+  light: (
+    --backgroundColor: #{$linen},
+    --textColor: #{$black},
+    --buttonTextColor: white,
+    --buttonTextHoverColor: #{$red},
+    --buttonColor: #{$red},
+    --buttonBorderHover: 2px solid #{$red},
+    --accentColor:#{$red},
+    --filterVals:invert(0.1) sepia(1) saturate(16) hue-rotate(5deg),
+  ),
+  dark: (
+   --backgroundColor: black,
+   --textColor: white,
+   --buttonTextColor: black,
+   --buttonTextHoverColor: #{$blue},
+   --buttonColor: #{$blue},
+   --buttonBorderHover: 2px solid #{$blue},
+   --accentColor:#{$blue},
+  )
+);
+@mixin theme($theme) {
+  @each $var, $value in map-get($themes, $theme) {
+    --#{$var}: #{$value};
+  }
+}
+
+.light-theme {
+  @include theme(light);
+}
+
+.dark-theme {
+  @include theme(dark);
+}
+
+

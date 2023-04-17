@@ -21,14 +21,18 @@ section.quoteContainer{
     padding-bottom: 50px;
 }
 .quoteContainer h1{
-    color:white;
+    color:var(--textColor);
     line-height:1.5em;
     width:550px;
     padding-top:50px;
+    font-family:'math';
+    font-size:2rem;
+    
 }
 .quoteContainer h2{
-    color:$blue;
+    color:var(--textColor);
     margin-top:30px;
+    font-family:"Telegraf-UltraBold"
 }
 section.aboutMe{
     margin-left:50px;
@@ -37,17 +41,21 @@ section.aboutMe{
 section.aboutMe h1{
     font-size:5rem;
     font-family:"Migha";
-    color:$blue;
+    color:var(--accentColor);
     margin-bottom:30px;
 }
 section.aboutMe p{
     font-size:2rem;
-    font-family:"Telegraf-UltraLight";
-    color:white;
+    font-family:"Telegraf-Regular";
+    color:var(--textColor);
     line-height:1.6em;
     word-spacing: 5px;
     max-width: 1300px;
     min-width:600px;
+}
+section.aboutMe p span {
+    color:var(--accentColor);
+    font-family:"Telegraf-UltraBold";
 }
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px){

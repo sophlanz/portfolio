@@ -1,3 +1,4 @@
+
 nav {
     color:white;
     width:100%;
@@ -22,7 +23,7 @@ nav .left li a{
 button.menuToggle{
    background:none;
    border:none;
-   color:white;
+   color:var(--textColor);
    font-family:"Migha";
    font-size:2rem;
    font-weight:bolder;
@@ -40,7 +41,7 @@ nav{
     font-weight:700;
     font-size: 3.2rem;
     font-family:"Telegraf-UltraBold";
-     color:$blue;
+     color:var(--accentColor);
 }
 
 /*when one element is hovered, change color and blur others*/

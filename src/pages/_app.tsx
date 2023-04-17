@@ -7,6 +7,9 @@ import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import Socials from '../components/socials';
 import Head from 'next/head';
+import '../styles/globals.scss';
+import styles from '../styles/themes.module.scss';
+
 export default function App({ Component, pageProps }: AppProps): JSX.Element {
   //loading 
   const [loading, setLoading]= useState<boolean>(false);
@@ -14,7 +17,21 @@ export default function App({ Component, pageProps }: AppProps): JSX.Element {
    /*circle styles */
    const [left, setLeft] = useState<string>();
    const [right, setRight] = useState<string>();
- 
+   //theme
+   const [theme,setTheme]=useState<string>('theme-light')
+ const toggleTheme = () => {
+  /* setTheme(theme === 'theme-light' ? 'theme-dark' : 'theme-light'); */
+  const body = document.querySelector('body');
+  if (body && body.classList.contains('theme-light')) {
+    body.classList.remove('theme-light');
+    body.classList.add('theme-dark');
+  } else {
+    if(body){
+      body.classList.remove('theme-dark');
+      body.classList.add('theme-light');
+    }
+  }
+ }
    const setCursor = (e:React.MouseEvent) => {
      const x = e.pageX;
          const y = e.pageY;
@@ -37,7 +54,8 @@ export default function App({ Component, pageProps }: AppProps): JSX.Element {
       <Head>
          <meta name="viewport" content="width=device-width, initial-scale=1 ,  maximum-scale=1, user-scalable=0"/>
       </Head>
-      <div className="cursorContainer"onMouseMove={(e)=> setCursor(e)}>
+      <div className={'cursorContainer'}onMouseMove={(e)=> setCursor(e)}>
+      <button onClick={toggleTheme}>Toggle Theme</button>
       <Socials/>
       <Component {...pageProps} />
         {/*circle that will follow cursor */}

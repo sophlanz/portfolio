@@ -6,13 +6,13 @@ form.contact{
 }
 form.contact label{
     font-size:4rem;
-    color:white;
+    color:var(--textColor);
     font-family:'Branch';
     animation:growForm 4s;
 }
 input{
     border:none;
-    border-bottom:2px solid $blue;
+    border-bottom:2px solid var(--accentColor);
     outline:0;
     background:none;
     width:400px;
@@ -34,7 +34,7 @@ input:-webkit-autofill {
     -webkit-text-fill-color: white !important;
 }
 form.contact button{
-    background-color:$blue;
+    background-color:var(--buttonColor);
     border-radius:50%;
     border:none;
     height:300px;
@@ -48,9 +48,9 @@ form.contact button{
     
 }
 form.contact button:hover{
-    background-color:black;
-    border:$blue 2px solid;
-    color:$blue;
+    background-color:var(--backgroundColor);
+    border:var(--accentColor) 2px solid;
+    color:var(--accentColor);
     float:left;
     cursor:pointer;
 }
@@ -61,7 +61,7 @@ form.contact p{
     margin-top:20px;
 }
 .contactGreeting{
-    color:$blue;
+    color:var(--accentColor);
     font-size:7rem;
 
 }
@@ -112,8 +112,8 @@ form.contact p{
 
 }
 @keyframes changeColor{
-    from{ background-color:transparent; border:2px solid $blue; border-radius:50%}
-    to{ background-color:$blue };
+    from{ background-color:transparent; border:2px solid var(--accentColor); border-radius:50%}
+    to{ background-color:var(--accentColor) };
 }
 @keyframes growForm{
     from{visiblity:hidden};
