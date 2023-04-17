@@ -44,7 +44,10 @@ export default function App({ Component, pageProps }: AppProps): JSX.Element {
   router.events.on('routeChangeStart',handleStart)
   router.events.on('routeChangeComplete', handleComplete)
   router.events.on('routeChangeError', handleComplete)
-
+  const body = document.querySelector('body');
+  if (body && !body.classList.contains('theme-light') &&!body.classList.contains('theme-dark') ) {
+    body.classList.add('theme-light');
+  }
  },[router]);
   return (
     <>

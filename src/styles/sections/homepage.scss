@@ -99,7 +99,7 @@ header h1.last{
     top:50%;
     left:50%;
     transform:translate(-50%,-50%);
-    color:$blue;
+    color:var(--accentColor);
 }
 .loadingContainer{
     width:100vw;
