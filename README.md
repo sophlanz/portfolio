@@ -13,6 +13,7 @@ Portfolio website to showcase my projects in a more cohesive, artistic way than 
 - Advanced transitions and animations.
 - SendGrid for sending emails.
 - Responsive Design
+- Toggle between light and dark mode
 ## Future Updates
 - 404 Page
 
