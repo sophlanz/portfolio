@@ -60,20 +60,21 @@ form.contact p{
     font-family:"Branch";
     margin-top:20px;
 }
-.contactGreeting{
-    color:var(--accentColor);
-    font-size:7rem;
 
-}
 .contactContainer{
     display:flex;
     flex-direction:column;
     padding-left:50px;
     padding-top:50px;
+    animation:bottomToTop 1s ease forwards;
 }
 .contactGreeting {
-    padding-top: 200px;
-    padding-left:100px;
+    color:var(--accentColor);
+    font-size:7rem;
+    margin-top: 200px;
+    margin-left: 100px;
+    animation: bottomToTop 1s ease forwards;
+
 }
 .contactGreeting:hover  ~  .cursorCircle {
     height:250px;
@@ -118,4 +119,14 @@ form.contact p{
 @keyframes growForm{
     from{visiblity:hidden};
     to{visibility:visible};
+}
+@keyframes bottomToTop{
+    from{ 
+        opacity:0;
+        transform:translateY(100%)
+    }
+    to{
+        opacity:1;
+        transform:none;
+    }
 }
