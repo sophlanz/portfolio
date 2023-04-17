@@ -36,7 +36,8 @@ Portfolio website to showcase my projects in a more cohesive, artistic way than 
 <img width="397" alt="Captura de Pantalla 2023-04-17 a la(s) 5 14 24 p m" src="https://user-images.githubusercontent.com/75180391/232613518-4706da82-d0f4-4ba5-ad7e-614214bde55c.png">
 <img width="390" alt="Captura de Pantalla 2023-04-17 a la(s) 5 14 50 p m" src="https://user-images.githubusercontent.com/75180391/232613530-b9f1f762-69c9-4ab8-89dd-c62508c220d4.png">
 <img width="391" alt="Captura de Pantalla 2023-04-17 a la(s) 5 16 08 p m" src="https://user-images.githubusercontent.com/75180391/232613493-ac96626f-8047-42bf-ab14-29875ce1b4fe.png">
-<img width="1728" alt="Captura de Pantalla 2023-04-17 a la(s) 5 11 06 p m" src="https://user-images.githubusercontent.com/75180391/232613550-b3f4380e-cb98-4dfe-9bb8-003a4bbf4459.png">
+<img width="390" alt="Captura de Pantalla 2023-04-17 a la(s) 5 16 21 p m" src="https://user-images.githubusercontent.com/75180391/232613928-fa6f9b07-e9db-4993-8adf-4d8204aa752d.png">
+
 
 ## Screenshots Mobile Dark Mode
 <img width="391" alt="Captura de Pantalla 2023-04-17 a la(s) 5 14 15 p m" src="https://user-images.githubusercontent.com/75180391/232613589-d73815a6-24d9-4d4d-b784-ee030dfe7417.png">
