@@ -80,7 +80,7 @@ export default function NavBar (props:Props): JSX.Element {
              className="Modal"
              overlayClassName="Overlay"
            >
-                <button className="menuToggle"  onClick={closeModal} style={{ position: "absolute", top: "20px", right: "40px", width:"125px"}}>CLOSE</button>
+                <button className="menuToggleModal"  onClick={closeModal} style={{ position: "absolute", top: "20px", right: "40px", width:"125px"}}>CLOSE</button>
                 <div className="right" style={{display: modalIsOpen===true ? "flex" : "none"}}>
                     {displayList}
                 </div>

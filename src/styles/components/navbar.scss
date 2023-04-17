@@ -29,6 +29,16 @@ button.menuToggle{
    cursor:pointer;
    animation:fromRightToLeft 2s;
 }
+button.menuToggleModal{
+    background:none;
+    border:none;
+    color:white;
+    font-family:"Migha";
+    font-size:2rem;
+    font-weight:bolder;
+    cursor:pointer;
+    animation:fromRightToLeft 2s;
+}
 nav{
     padding:20px 30px;
 }
@@ -111,7 +121,7 @@ nav input:checked + label.themeToggle:after {
 }
 
 label.themeToggle:active:after {
-	width: 130px;
+	width: 70px;
 }
 
 nav input{
