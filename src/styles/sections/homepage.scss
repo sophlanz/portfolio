@@ -73,14 +73,13 @@ header h1.last{
     flex-direction:column;
 }
 .cursorCircle{
-    background-color:$blue;
+    background-color:var(--accentColor);
     height:20px;
     width:20px;
     border-radius:50%;
     position:fixed;
     transform:translate(-50%,-50%);
     pointer-events:none;
-    mix-blend-mode: difference;
 }
 .homepageContainer{
     width:100vw;

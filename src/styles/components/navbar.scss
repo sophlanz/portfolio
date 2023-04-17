@@ -69,9 +69,8 @@ svg {
     background-color:black;
 }
 button.menuToggle:hover{
-    color:$blue;
+    color:var(--accentColor);
     transition:color ease-in-out .5s;
-    mix-blend-mode: difference;
 }
 nav button.menuToggle:hover  ~ .cursorContainer .cursorCircle {
     height:40px;
@@ -80,6 +79,8 @@ nav button.menuToggle:hover  ~ .cursorContainer .cursorCircle {
 nav:hover ~ .cursorCircle{
     height:50px;
     width:50px;
+    mix-blend-mode: difference;
+
 }
 /* Extra small devices (phones, 600px and down) */
 /* @media only screen and (max-width: 600px) {
