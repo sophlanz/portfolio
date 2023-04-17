@@ -74,11 +74,11 @@ form.contact p{
 .contactGreeting {
     padding-top: 200px;
     padding-left:100px;
-
 }
 .contactGreeting:hover  ~  .cursorCircle {
     height:250px;
     width:250px;
+    mix-blend-mode: difference;
 }
 .contactGreeting:hover  ~  .cursorCircle::after{
     content:"I DON'T BITE 🤩";

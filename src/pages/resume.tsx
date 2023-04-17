@@ -15,9 +15,9 @@ export default function Resume(): JSX.Element {
   return (
     <>
     <Navbar/>
-    <div className="resumeContainer" style={{display:"flex", justifyContent:"center", height:"1050px", marginTop:"-50px"}}>
+    <div className="resumeContainer">
       <Document file="/pdfs/Resume.pdf" onLoadSuccess={onDocumentLoadSuccess}>
-        <Page pageNumber={pageNumber} scale={1.3} />
+        <Page pageNumber={pageNumber} scale={1.3} renderTextLayer={false}  />
       </Document>
       {numPages && (
         <p>

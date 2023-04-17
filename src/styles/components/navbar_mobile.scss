@@ -7,17 +7,17 @@
        gap:10px;
     }
     .right li{
-        border-bottom:2px solid $blue;
+        border-bottom:2px solid var(--accentColor);
     }
     .right li:nth-child(1){
-        border-top:2px solid $blue;
+        border-top:2px solid var(--accentColor);
     }
     .Modal{
-        background-color:black;
+        background-color:var(--backgroundColor);
     }
     nav{
         position:relative;
-        margin-left:70%;
+        margin-left:50%;
         width:100vw;
         padding-top:0px;
     }

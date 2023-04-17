@@ -1,0 +1,17 @@
+.resumeContainer{
+    overflow-y:hidden;
+    display:flex;
+    justify-content:center;
+    height:1050px;
+    margin-top:-50px;
+}
+
+@media only screen and (max-width: 600px) {
+    .resumeContainer {
+      width: 100%;
+      height: auto;
+      margin-top:0px;
+      display:block;
+    }
+ 
+  }
