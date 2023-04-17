@@ -9,8 +9,20 @@ export default function NavBar (props:Props): JSX.Element {
     const [modalIsOpen, setIsOpen] = useState<boolean>(false);
     const [displayList, setDisplayList] = useState<JSX.Element[]>();
     const display=props.style ? props.style : 'flex' ;
-  
-    
+
+    const toggleTheme = () => {
+      /* setTheme(theme === 'theme-light' ? 'theme-dark' : 'theme-light'); */
+      const body = document.querySelector('body');
+      if (body && body.classList.contains('theme-light')) {
+        body.classList.remove('theme-light');
+        body.classList.add('theme-dark');
+      } else {
+        if(body){
+          body.classList.remove('theme-dark');
+          body.classList.add('theme-light');
+        }
+      }
+     }
     const openModal= () => {
         //clear old list
         setDisplayList([])
@@ -56,6 +68,9 @@ export default function NavBar (props:Props): JSX.Element {
 
   return (
     <nav style={{display:display}}>
+             
+            <input type="checkbox" id="toggleTheme"onChange={toggleTheme}/>
+            <label className="themeToggle" htmlFor='toggleTheme'/>
             <button className="menuToggle" onClick={openModal}>MENU</button>
             <Modal
              isOpen={modalIsOpen}

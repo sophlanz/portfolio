@@ -77,9 +77,8 @@ img{
 .svgs a img{
     height:30px;
     width:30px;
-    background-color:black;
-    border-radius:1em;
-    filter:var(--filterVals);
+    border-radius:50%;
+    filter: var(--filterVals, none);
 }
 .svgs{
     gap:10px;

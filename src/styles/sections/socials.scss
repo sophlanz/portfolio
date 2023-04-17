@@ -10,8 +10,7 @@
 .socials img{
     width:40px;
     height:40px;
-    filter: var(--filterVals,none);
-    
+    filter: var(--filterSocials);
 }
 @keyframes delayVisibility{
     from{opacity: 0;}

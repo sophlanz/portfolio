@@ -15,7 +15,7 @@ export default function LoadingScreen (props:Props): JSX.Element {
             clearInterval(interval)
             setDisplay('none');
             if(props.sendToParent){
-              props.sendToParent(()=>'block')
+              props.sendToParent(()=>'flex')
             }
           }
             setWord(words[count])

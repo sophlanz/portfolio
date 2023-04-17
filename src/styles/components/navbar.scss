@@ -1,11 +1,10 @@
 
 nav {
     color:white;
-    width:100%;
     position: absolute;
     top: 20px;
     right: 30px;
-    width:70px;
+    width:200px;;
     display:flex;
 }
 
@@ -82,6 +81,46 @@ nav:hover ~ .cursorCircle{
     mix-blend-mode: difference;
 
 }
+/*create toggle for themes*/
+label.themeToggle{
+    width: 75px;
+    height: 30px;
+    background: $red;
+    display: block;
+    border-radius: 100px;
+    position: relative;
+}
+
+label.themeToggle:after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 40px;
+    height: 30px;
+    background: #fff;
+    border-radius: 90px;
+    transition: 0.3s;
+}
+nav input:checked + label.themeToggle{
+    background:$blue;
+}
+nav input:checked + label.themeToggle:after {
+	left: calc(100% - 1px);
+	transform: translateX(-100%);
+}
+
+label.themeToggle:active:after {
+	width: 130px;
+}
+
+nav input{
+    animation:fromTopToBottom 2s;
+    display:none;
+    
+
+
+}
 /* Extra small devices (phones, 600px and down) */
 /* @media only screen and (max-width: 600px) {
     .right {
@@ -111,4 +150,8 @@ nav:hover ~ .cursorCircle{
 @keyframes fromRightToLeft{
     from{ margin-left:100px }
     to{ margin-right:0px }
+}
+@keyframes fromTopToBottom{
+    from{margin-top:-100px}
+    to{margin-top:0px}
 }

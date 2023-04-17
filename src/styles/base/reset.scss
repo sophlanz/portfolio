@@ -70,7 +70,9 @@ body.theme-light {
 	--buttonBorderHover: 2px solid #{$red};
 	--accentColor: #{$red};
 	--strokeColor:black;
-	--filterVals: invert(0.1) sepia(1) saturate(16) hue-rotate(5deg);
+	--filterVals: invert(30%) sepia(93%) saturate(1154%) hue-rotate(332deg) brightness(98%) contrast(104%);
+	--svgBackground:transparent;
+	--filterSocials:none;
   }
   
   body.theme-dark  {
@@ -82,4 +84,7 @@ body.theme-light {
 	--buttonBorderHover: 2px solid #{$blue};
 	--accentColor: #{$blue};
 	--strokeColor:white;
+	--svgBackground:#{$blue};
+	--filterVals:invert(9%) sepia(100%) saturate(7293%) hue-rotate(251deg) brightness(89%) contrast(113%);
+	--filterSocials: invert(9%) sepia(100%) saturate(7293%) hue-rotate(251deg) brightness(89%) contrast(113%);
   }
