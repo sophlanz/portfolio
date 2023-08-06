@@ -3,7 +3,7 @@ interface Props {
   leftPx?: string;
   rightPx?: string;
 }
-export default function CursorCircle(props: Props): JSX.Element {
+export default function ShadowCursor(props: Props): JSX.Element {
   return (
     <span
       className="cursorCircle"

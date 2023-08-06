@@ -1,20 +1,18 @@
-import React, { useState } from "react";
+import React, { useState, useCallback } from "react";
 import Modal from "react-modal";
 import MenuList from "./menuList";
+import MenuOpenButton from "./menuOpenButton";
+import MenuCloseButton from "./menuCloseButton";
 export default function Menu(): JSX.Element {
   const [modalIsOpen, setIsOpen] = useState<boolean>(false);
-  const openModal = () => {
-    setIsOpen(true);
-  };
   const closeModal = () => {
     setIsOpen(false);
   };
+
   return (
     <>
       {/*menu toggle*/}
-      <button className="menuToggle" onClick={openModal}>
-        MENU
-      </button>
+      <MenuOpenButton setIsOpen={setIsOpen} />
       <Modal
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
@@ -23,18 +21,7 @@ export default function Menu(): JSX.Element {
         className="Modal"
         overlayClassName="Overlay"
       >
-        <button
-          className="menuToggleModal"
-          onClick={closeModal}
-          style={{
-            position: "absolute",
-            top: "20px",
-            right: "40px",
-            width: "125px",
-          }}
-        >
-          CLOSE
-        </button>
+        <MenuCloseButton setIsOpen={setIsOpen} />
         <MenuList modalIsOpen={modalIsOpen} setIsOpen={setIsOpen} />
       </Modal>
     </>

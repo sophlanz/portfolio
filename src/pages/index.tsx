@@ -1,5 +1,5 @@
 import LoadingScreen from "../components/loading";
-import Navbar from "../components/navbar";
+import Navbar from "../components/nav";
 import { useState, useEffect } from "react";
 
 export default function Home(): JSX.Element {

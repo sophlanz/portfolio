@@ -1,10 +1,15 @@
 import React from "react";
-export default function NavBar(): JSX.Element {
+import Menu from "./menu";
+import ThemeToggle from "./themeToggle";
+interface Props {
+  style?: string;
+}
+export default function NavBar(props: Props): JSX.Element {
+  const display = props.style ? props.style : "flex";
   return (
-    <nav>
-      {/*theme toggle */}
-      <input type="checkbox" id="toggleTheme" />
-      <label className="themeToggle" htmlFor="toggleTheme" />
+    <nav style={{ display: display }}>
+      <ThemeToggle />
+      <Menu />
     </nav>
   );
 }
