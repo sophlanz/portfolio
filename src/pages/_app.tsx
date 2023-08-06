@@ -1,64 +1,44 @@
-import '@/styles/globals.scss'
-import type { AppProps } from 'next/app'
-import NavBar from '../components/navbar';
-import Cursor from '../components/curosor';
-import LoadingScreen  from '../components/loading';
-import { useState, useEffect } from 'react';
-import { useRouter } from 'next/router';
-import Socials from '../components/socials';
-import Head from 'next/head';
-import '../styles/globals.scss';
-import styles from '../styles/themes.module.scss';
-
+import "@/styles/globals.scss";
+import type { AppProps } from "next/app";
+import { useState, useEffect } from "react";
+import { useRouter } from "next/router";
+import Socials from "../components/socials";
+import Head from "next/head";
+import "../styles/globals.scss";
+import ShadowCursor from "@/components/cursor/shadowCursor";
 export default function App({ Component, pageProps }: AppProps): JSX.Element {
-  //loading 
-  const [loading, setLoading]= useState<boolean>(false);
-  const router = useRouter();
-   /*circle styles */
-   const [left, setLeft] = useState<string>();
-   const [right, setRight] = useState<string>();
-   const setCursor = (e:React.MouseEvent) => {
-     const x = e.pageX;
-         const y = e.pageY;
-         setLeft(`${x}px`)
-         setRight(`${y}px`)
- };
- useEffect(()=> {
-  const handleStart = () => {setLoading(true)};
-  const handleComplete = ()=> {setLoading(false)};
-  router.events.on('routeChangeStart',handleStart)
-  router.events.on('routeChangeComplete', handleComplete)
-  router.events.on('routeChangeError', handleComplete)
-  const body = document.querySelector('body');
-  if (body && !body.classList.contains('theme-light') &&!body.classList.contains('theme-dark') ) {
-    body.classList.add('theme-light');
-  }
- },[router]);
+  const [left, setLeft] = useState<string>();
+  const [right, setRight] = useState<string>();
+  const setCursor = (e: React.MouseEvent) => {
+    const x = e.pageX;
+    const y = e.pageY;
+    setLeft(`${x}px`);
+    setRight(`${y}px`);
+  };
+  useEffect(() => {
+    const body = document.querySelector("body");
+    if (
+      body &&
+      !body.classList.contains("theme-light") &&
+      !body.classList.contains("theme-dark")
+    ) {
+      body.classList.add("theme-light");
+    }
+  }, []);
   return (
     <>
-    {
-      !loading ?
-      <>
       <Head>
-         <meta name="viewport" content="width=device-width, initial-scale=1 ,  maximum-scale=1, user-scalable=0"/>
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1 ,  maximum-scale=1, user-scalable=0"
+        />
       </Head>
-      <div className={'cursorContainer'}onMouseMove={(e)=> setCursor(e)}>
-      <Socials/>
-      <Component {...pageProps} />
+      <div className={"cursorContainer"} onMouseMove={(e) => setCursor(e)}>
+        <Socials />
+        <Component {...pageProps} />
         {/*circle that will follow cursor */}
-        <span className="cursorCircle" style={{left:`${left}`, top:`${right}`}}></span>
-    </div>
+        <ShadowCursor leftPx={left} rightPx={right} />
+      </div>
     </>
-    :
-    <>
-    <Head>
-        <meta name="viewport" content="width=device-width, initial-scale=1,  maximum-scale=1, user-scalable=0"/>
-    </Head>
-    <div className="cursorContainer"onMouseMove={(e)=> setCursor(e)}>
-        <LoadingScreen/> 
-    </div>
-    </>
-    }
-   </>
-  )
+  );
 }
