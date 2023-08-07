@@ -6,11 +6,12 @@ export default function Home(): JSX.Element {
   const [didInit, setDidInit] = useState<boolean>(false);
   useEffect(() => {
     const data = window.localStorage.getItem("didInit");
+    console.log(data);
     if (!data) {
-      window.localStorage.setItem("didInit", "true");
       let timeOut = setTimeout(() => {
         setDidInit(true);
-      }, 5000);
+      }, 1350);
+      window.localStorage.setItem("didInit", "true");
       return () => {
         clearTimeout(timeOut);
       };
