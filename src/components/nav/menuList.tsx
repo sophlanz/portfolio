@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from "react";
+import React, { useState, useEffect } from "react";
 import uniqid from "uniqid";
 import Link from "next/link";
 interface Props {
@@ -29,7 +29,7 @@ export default function MenuList(props: Props): JSX.Element {
       <Link href="/resume">RESUME</Link>
     </li>,
   ];
-  useMemo(() => {
+  useEffect(() => {
     if (props.modalIsOpen === true) {
       let index: number = 0;
       const interval = setInterval(() => {
