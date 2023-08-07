@@ -9,10 +9,11 @@ export default function Home(): JSX.Element {
     if (!data) {
       window.localStorage.setItem("didInit", "true");
       setTimeout(() => {
-        return setDidInit(true);
+        setDidInit(true);
       }, 3000);
     }
   }, []);
+  console.log(didInit);
   return (
     <>
       {!didInit ? (
