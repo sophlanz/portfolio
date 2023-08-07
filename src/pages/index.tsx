@@ -17,7 +17,7 @@ export default function Home(): JSX.Element {
     } else {
       setDidInit(true);
     }
-  });
+  }, []);
   console.log(didInit);
   return (
     <>
