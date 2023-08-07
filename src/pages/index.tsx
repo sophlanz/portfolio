@@ -8,11 +8,16 @@ export default function Home(): JSX.Element {
     const data = window.localStorage.getItem("didInit");
     if (!data) {
       window.localStorage.setItem("didInit", "true");
-      setTimeout(() => {
+      let timeOut = setTimeout(() => {
         setDidInit(true);
-      }, 3000);
+      }, 5000);
+      return () => {
+        clearTimeout(timeOut);
+      };
+    } else {
+      setDidInit(true);
     }
-  }, []);
+  });
   console.log(didInit);
   return (
     <>
