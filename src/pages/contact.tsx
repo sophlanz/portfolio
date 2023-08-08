@@ -1,10 +1,12 @@
+import React, { useState } from "react";
+import ContactContainer from "@/components/contact";
 import Navbar from "../components/nav";
-import { useState } from "react";
+import { stat } from "fs";
 export default function Contact(): JSX.Element {
   const [name, setName] = useState<string>("");
   const [email, setEmail] = useState<string>("");
   const [message, setMessage] = useState<string>("");
-  const [statusMessage, setStatusMessage] = useState<string>();
+  const [statusMessage, setStatusMessage] = useState<string>("");
   const handleSubmit = async (e: React.SyntheticEvent) => {
     e.preventDefault();
     //verify credentials
@@ -70,36 +72,13 @@ export default function Contact(): JSX.Element {
           Shy. Say Hi!
         </span>{" "}
       </h1>
-      <div className="contactContainer">
-        <form className="contact" onSubmit={(e) => handleSubmit(e)}>
-          <label htmlFor="name">
-            Hello Sophia, I&apos;m
-            <input
-              type="text"
-              name="name"
-              onChange={(e) => setName(e.target.value)}
-            />
-          </label>
-          <label htmlFor="email">
-            Here is my fancy e-mail
-            <input
-              type="text"
-              name="email"
-              onChange={(e) => setEmail(e.target.value)}
-            />
-          </label>
-          <label htmlFor="message">
-            I would love to connect about
-            <input
-              type="text"
-              name="message"
-              onChange={(e) => setMessage(e.target.value)}
-            />
-          </label>
-          <p>{statusMessage}</p>
-          <button type="submit">Send</button>
-        </form>
-      </div>
+      <ContactContainer
+        handleSubmit={handleSubmit}
+        setEmail={setEmail}
+        setName={setName}
+        setMessage={setMessage}
+        statusMessage={statusMessage}
+      />
     </>
   );
 }
