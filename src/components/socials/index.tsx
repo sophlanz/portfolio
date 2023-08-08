@@ -2,7 +2,7 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 export default function Socials(): JSX.Element {
   const [top, setTop] = useState<string>("50%");
-
+  //adjust icon location on projects page, to not cover projects
   useEffect(() => {
     if (
       typeof window !== "undefined" &&
