@@ -32,7 +32,6 @@ export default function Contact(): JSX.Element {
           return;
         });
     }
-    console.log(name, email, message);
   };
   const handleValidation = () => {
     type Errors = {
@@ -42,6 +41,7 @@ export default function Contact(): JSX.Element {
     };
     let valid = true;
     let errors: Errors = {};
+    //check if the fields are empty
     if (!name.length) {
       errors["name"] = true;
       valid = false;
@@ -58,7 +58,6 @@ export default function Contact(): JSX.Element {
       let keys = Object.keys(errors);
       alert(`please fill-out the following:${keys}`);
     }
-
     return valid;
   };
   return (
