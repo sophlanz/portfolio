@@ -1,9 +1,7 @@
 import React from "react";
 import ProjectContainer from "./projectContainer";
-interface Props {
-  ref: React.MutableRefObject<HTMLDivElement>;
-}
-export default function Projects(props: Props): JSX.Element {
+
+export default function AllProjects(): JSX.Element {
   return (
     <>
       <ProjectContainer
@@ -12,7 +10,6 @@ export default function Projects(props: Props): JSX.Element {
         liveLink="https://ai-lengua.vercel.app/"
         imgSrc="/ImagesProjects/aiLengua.png"
         imgPosition="top left"
-        ref={props.ref}
       />
       <ProjectContainer
         title="Excursion E-Commerce"
@@ -20,7 +17,7 @@ export default function Projects(props: Props): JSX.Element {
         liveLink="https://ecommerce-travel.vercel.app/"
         imgSrc="/ImagesProjects/excursionEscape.png"
         imgPosition="top left"
-        ref={props.ref}
+        /*        ref={props.ref} */
       />
       <ProjectContainer
         title="CV Generator"
@@ -28,7 +25,7 @@ export default function Projects(props: Props): JSX.Element {
         liveLink="https://cv-curator.up.railway.app/"
         imgSrc="/ImagesProjects/cvCurator.png"
         imgPosition="center"
-        ref={props.ref}
+        /*         ref={props.ref} */
       />
       <ProjectContainer
         title="Weather App"
@@ -36,7 +33,7 @@ export default function Projects(props: Props): JSX.Element {
         liveLink="https://weather-app-sophlanz.netlify.app/"
         imgSrc="/ImagesProjects/weatherApp.png"
         imgPosition="center"
-        ref={props.ref}
+        /*         ref={props.ref} */
       />
       <ProjectContainer
         title="Restaurant Page"
@@ -44,7 +41,7 @@ export default function Projects(props: Props): JSX.Element {
         liveLink="https://sophlanz.github.io/restaurant-page/"
         imgSrc="/ImagesProjects/restaurantPage.png"
         imgPosition="center"
-        ref={props.ref}
+        /*         ref={props.ref} */
       />
       <ProjectContainer
         title="Etch A Sketch"
@@ -52,7 +49,7 @@ export default function Projects(props: Props): JSX.Element {
         liveLink="https://sophlanz.github.io/etch-a-sketch/"
         imgSrc="/ImagesProjects/etchSketch.png"
         imgPosition="center"
-        ref={props.ref}
+        /*       ref={props.ref} */
       />
     </>
   );

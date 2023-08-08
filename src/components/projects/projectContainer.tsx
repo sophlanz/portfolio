@@ -7,11 +7,10 @@ interface Props {
   liveLink: string;
   imgSrc: string;
   imgPosition: string;
-  ref: React.MutableRefObject<HTMLDivElement>;
 }
-export default function ProjectContainer(props: Props) {
+export default function ProjectContainer(props: Props): JSX.Element {
   return (
-    <div className="projectContainer" ref={props.ref}>
+    <div className="projectContainer">
       <h2>{props.title}</h2>
       <ProjectImage
         imgSrc={props.imgSrc}
