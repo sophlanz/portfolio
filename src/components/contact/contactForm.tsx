@@ -16,18 +16,21 @@ export default function ContactForm(props: Props): JSX.Element {
         type="text"
         name="name"
         onChangeSetState={setName}
+        message="Hello Sophia, I'm"
       />
       <FormLabel
         htmlFor="email"
         type="text"
         name="email"
         onChangeSetState={setEmail}
+        message="Here is my fancy e-mail"
       />
       <FormLabel
         htmlFor="message"
         type="text"
         name="message"
         onChangeSetState={setMessage}
+        message="I would love to connect about"
       />
       <p>{statusMessage}</p>
       <button type="submit">Send</button>

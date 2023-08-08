@@ -4,15 +4,17 @@ interface Props {
   type: string;
   name: string;
   onChangeSetState: React.Dispatch<React.SetStateAction<string>>;
+  message: string;
 }
 export default function FormLabel(props: Props): JSX.Element {
+  const { htmlFor, type, name, onChangeSetState, message } = props;
   return (
-    <label htmlFor={props.htmlFor}>
-      Hello Sophia, I&apos;m
+    <label htmlFor={htmlFor}>
+      {message}
       <input
-        type={props.type}
-        name={props.name}
-        onChange={(e) => props.onChangeSetState(e.target.value)}
+        type={type}
+        name={name}
+        onChange={(e) => onChangeSetState(e.target.value)}
       />
     </label>
   );
