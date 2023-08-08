@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import ContactContainer from "@/components/contact";
 import Navbar from "../components/nav";
-import { stat } from "fs";
 export default function Contact(): JSX.Element {
   const [name, setName] = useState<string>("");
   const [email, setEmail] = useState<string>("");
@@ -65,13 +64,6 @@ export default function Contact(): JSX.Element {
   return (
     <>
       <Navbar />
-      <h1 className="contactGreeting">
-        <span style={{ fontFamily: "Telegraf-UltraLight" }}>Do</span>
-        <span style={{ fontFamily: "Telegraf-Regular" }}>n&apos;t Be </span>
-        <span style={{ fontFamily: "Telegraf-UltraBold" }}>
-          Shy. Say Hi!
-        </span>{" "}
-      </h1>
       <ContactContainer
         handleSubmit={handleSubmit}
         setEmail={setEmail}
