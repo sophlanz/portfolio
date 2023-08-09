@@ -4,7 +4,14 @@ import { useState, useEffect } from "react";
 import HomepageHeader from "@/components/homepageHeader";
 import matter from "gray-matter";
 import { GetStaticProps } from "next";
-export default function Home(): JSX.Element {
+interface Props {
+  posts: {
+    frontmatter: object;
+    markdownBody: string;
+    slug: String;
+  }[];
+}
+export default function Home(props: Props): JSX.Element {
   const [didInit, setDidInit] = useState<boolean>(false);
   useEffect(() => {
     const data = window.localStorage.getItem("didInit");
@@ -26,7 +33,7 @@ export default function Home(): JSX.Element {
         <LoadingScreen />
       ) : (
         <>
-          <Navbar />
+          <Navbar posts={props.posts} />
           <HomepageHeader />
         </>
       )}
@@ -62,7 +69,7 @@ export const getStaticProps: GetStaticProps = async () => {
   });
   return {
     props: {
-      posts,
+      posts: posts,
     },
   };
 };
