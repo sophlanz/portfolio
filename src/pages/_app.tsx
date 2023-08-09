@@ -1,7 +1,6 @@
 import "@/styles/globals.scss";
 import type { AppProps } from "next/app";
 import { useState, useEffect } from "react";
-import { useRouter } from "next/router";
 import Socials from "../components/socials";
 import Head from "next/head";
 import "../styles/globals.scss";
