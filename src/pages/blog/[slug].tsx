@@ -4,6 +4,25 @@ import ReactMarkdown from "react-markdown";
 import glob from "glob";
 import { GetStaticProps, GetStaticPaths } from "next";
 import { ParsedUrlQuery } from "querystring";
+
+export default function BlogPost({
+  frontmatter,
+  markdownContent,
+}: {
+  frontmatter: { title: string; date: string; author: string };
+  markdownContent: string;
+}): JSX.Element {
+  return (
+    <div className={"blogPost"}>
+      <div className={"blogPostTitle"}>{frontmatter.title}</div>
+      <div className={"blogPostDate"}>{frontmatter.date}</div>
+      <div className={"blogPostAuthor"}>{frontmatter.author}</div>
+      <div className={"blogPostContent"}>
+        <ReactMarkdown>{markdownContent}</ReactMarkdown>
+      </div>
+    </div>
+  );
+}
 interface contextParams extends ParsedUrlQuery {
   slug: string;
 }
