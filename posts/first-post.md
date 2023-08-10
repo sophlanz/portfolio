@@ -1,7 +1,7 @@
 ---
-title: "Prepping for Blogging"
+title: "First Blog Post Loading..."
 author: "Sophia Lanzendorf "
-date: "August 9th, 2023"
+date: "Coming soon..."
 hero_image: /imagesBlogs/sun.jpg
 ---
 
