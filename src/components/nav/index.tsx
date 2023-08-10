@@ -10,6 +10,7 @@ interface Props {
   }[];
 }
 export default function NavBar(props: Props): JSX.Element {
+  console.log(props.posts);
   const display = props.style ? props.style : "flex";
   return (
     <nav style={{ display: display }}>

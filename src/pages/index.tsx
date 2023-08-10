@@ -45,7 +45,7 @@ interface MarkdownModule {
 }
 export const getStaticProps: GetStaticProps = async () => {
   // gets all .md files in the posts dir
-  const webpackContext = require.context("../posts", true, /\.md$/);
+  const webpackContext = require.context("../../posts", true, /\.md$/);
 
   //list of file names gotten by webpack
   const keys = webpackContext.keys();

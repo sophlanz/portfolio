@@ -30,7 +30,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
   const { slug } = context.params as contextParams;
 
   //get markdown & frontmatter from file based on slug
-  const post = await import(`../../posts/${slug}.md`);
+  const post = await import(`../../../posts/${slug}.md`);
 
   //content is the markdown string, data has the frontmatter
   const { data, content } = matter(post.default);
