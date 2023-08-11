@@ -1,5 +1,5 @@
 import React from "react";
-import ProjectContainer from "./projectContainer";
+import ProjectContainer from "./ProjectContainer";
 
 export default function AllProjects(): JSX.Element {
   return (

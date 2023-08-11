@@ -1,8 +1,8 @@
 import React, { useState, useCallback } from "react";
 import Modal from "react-modal";
-import MenuList from "./menuList";
-import MenuOpenButton from "./menuOpenButton";
-import MenuCloseButton from "./menuCloseButton";
+import MenuList from "./MenuList";
+import MenuOpenButton from "./MenuOpenButton";
+import MenuCloseButton from "./MenuCloseButton";
 export default function Menu(): JSX.Element {
   const [modalIsOpen, setIsOpen] = useState<boolean>(false);
   const closeModal = () => {

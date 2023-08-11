@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import Socials from "../components/socials";
 import Head from "next/head";
 import "../styles/globals.scss";
-import ShadowCursor from "@/components/cursor/shadowCursor";
+import ShadowCursor from "@/components/cursor/ShadowCursor";
 export default function App({ Component, pageProps }: AppProps): JSX.Element {
   const [left, setLeft] = useState<string>();
   const [right, setRight] = useState<string>();

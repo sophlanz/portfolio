@@ -1,6 +1,6 @@
 import React from "react";
-import ProjectImage from "./projectImage";
-import ProjectSVG from "./projectSvg";
+import ProjectImage from "./ProjectImage";
+import ProjectSVG from "./ProjectSvg";
 interface Props {
   title: string;
   githubLink: string;

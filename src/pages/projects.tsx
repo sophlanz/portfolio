@@ -2,7 +2,7 @@ import Image from "next/image";
 import { useRef, useEffect } from "react";
 import Navbar from "../components/nav";
 import AllProjects from "@/components/projects";
-import ProjectHeader from "@/components/projects/projectHeader";
+import ProjectHeader from "@/components/projects/ProjectHeader";
 export default function Projects(): JSX.Element {
   const projectsContainerRef = useRef<HTMLDivElement>(null);
   useEffect(() => {

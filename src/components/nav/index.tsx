@@ -1,6 +1,6 @@
 import React from "react";
-import Menu from "./menu";
-import ThemeToggle from "./themeToggle";
+import Menu from "./Menu";
+import ThemeToggle from "./ThemeToggle";
 interface Props {
   style?: string;
 }

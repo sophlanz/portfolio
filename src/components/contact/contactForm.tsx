@@ -1,5 +1,5 @@
 import React from "react";
-import FormLabel from "./formLabel";
+import FormLabel from "./FormLabel";
 interface Props {
   handleSubmit: (e: React.FormEvent<HTMLFormElement>) => void;
   setName: React.Dispatch<React.SetStateAction<string>>;
