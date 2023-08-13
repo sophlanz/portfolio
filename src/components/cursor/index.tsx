@@ -1,2 +1,1 @@
-import ShadowCursor from "./ShadowCursor";
-export default ShadowCursor;
+export { default as ShadowCursor } from "./shadowCursor";
