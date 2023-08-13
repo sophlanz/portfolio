@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import ContactContainer from "@/components/contact";
-import Navbar from "../components/nav";
+import { ContactContainer } from "@/components/contact";
+import { Navbar } from "../components/nav";
 export default function Contact(): JSX.Element {
   //advice: could all go in an object, or DS
   const [name, setName] = useState<string>("");

@@ -1,2 +1,1 @@
-import HomepageHeader from "./HomepageHeader";
-export default HomepageHeader;
+export { default as HomepageHeader } from "./HomepageHeader";

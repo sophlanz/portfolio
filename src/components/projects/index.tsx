@@ -1,2 +1,1 @@
-import AllProjects from "./AllProjects";
-export default AllProjects;
+export { default as AllProjects } from "./AllProjects";

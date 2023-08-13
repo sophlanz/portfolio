@@ -1,7 +1,7 @@
-import LoadingScreen from "../components/loading";
-import Navbar from "../components/nav";
+import { LoadingScreen } from "../components/loading";
+import { Navbar } from "../components/nav";
 import { useState, useEffect } from "react";
-import HomepageHeader from "@/components/homepageHeader";
+import { HomepageHeader } from "@/components/homepageHeader";
 
 export default function Home(): JSX.Element {
   const [didInit, setDidInit] = useState<boolean>(false);

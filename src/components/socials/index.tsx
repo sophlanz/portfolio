@@ -1,2 +1,1 @@
-import Socials from "./Socials";
-export default Socials;
+export { default as Socials } from "./Socials";

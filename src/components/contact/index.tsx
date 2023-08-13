@@ -1,2 +1,1 @@
-import ContactContainer from "./ContactContainer";
-export default ContactContainer;
+export { default as ContactContainer } from "./ContactContainer";

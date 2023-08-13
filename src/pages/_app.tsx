@@ -1,7 +1,7 @@
 import "@/styles/globals.scss";
 import type { AppProps } from "next/app";
 import { useState, useEffect } from "react";
-import Socials from "../components/socials";
+import { Socials } from "../components/socials";
 import Head from "next/head";
 import "../styles/globals.scss";
 import { ShadowCursor } from "../components/cursor";
