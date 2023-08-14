@@ -1,7 +1,7 @@
 import React from "react";
 import matter from "gray-matter";
 import { GetStaticProps } from "next";
-import NavBar from "@/components/nav";
+import { Navbar } from "@/components/nav";
 interface Props {
   posts?: {
     frontmatter: frontmatter;
@@ -15,11 +15,10 @@ type frontmatter = {
   author: string;
 };
 export default function BlogPosts(props: Props): JSX.Element {
-  console.log(props);
   const { posts } = props;
   return (
     <div>
-      <NavBar />
+      <Navbar />
       {posts?.map((post) => {
         return (
           <div key={`${post.slug}`}>
@@ -41,9 +40,7 @@ export const getStaticProps: GetStaticProps = async () => {
 
   //list of file names gotten by webpack
   const keys = webpackContext.keys();
-  console.log(keys);
   const values = keys.map(webpackContext);
-  console.log(values);
   //get the values of the files
   const posts = keys.map((key, index) => {
     const slug = key
@@ -51,7 +48,6 @@ export const getStaticProps: GetStaticProps = async () => {
       .split(".")
       .slice(0, -1)
       .join(".");
-    console.log(slug);
     const file = values[index] as MarkdownModule;
     //get frontmatter & markdownbody from file
     const { data, content } = matter(file.default);
