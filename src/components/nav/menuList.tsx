@@ -16,9 +16,9 @@ export default function MenuList(props: Props): JSX.Element {
     <li key={uniqid()} onClick={closeModal}>
       <Link href="/">HOME</Link>
     </li>,
-    <li key={uniqid()} onClick={closeModal}>
+    /*   <li key={uniqid()} onClick={closeModal}>
       <Link href="/blog">BLOG</Link>
-    </li>,
+    </li>, */
     <li key={uniqid()} onClick={closeModal}>
       <Link href="/projects">PROJECTS</Link>
     </li>,

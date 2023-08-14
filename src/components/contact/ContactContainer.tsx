@@ -2,24 +2,26 @@ import React from "react";
 import ContactForm from "./ContactForm";
 import ContactGreeting from "./ContactGreeting";
 interface Props {
-  handleSubmit: (e: React.FormEvent<HTMLFormElement>) => void;
-  setName: React.Dispatch<React.SetStateAction<string>>;
-  setEmail: React.Dispatch<React.SetStateAction<string>>;
-  setMessage: React.Dispatch<React.SetStateAction<string>>;
+  setFormData: React.Dispatch<React.SetStateAction<FormData>>;
+  formData: FormData;
+  handleSubmit: (e: React.SyntheticEvent, form: FormData) => void;
+}
+interface FormData {
+  name: string;
+  email: string;
+  message: string;
   statusMessage: string;
 }
 export default function ContactContainer(props: Props): JSX.Element {
-  const { handleSubmit, setName, setEmail, setMessage, statusMessage } = props;
+  const { setFormData, formData, handleSubmit } = props;
   return (
     <>
       <ContactGreeting />
       <div className="contactContainer">
         <ContactForm
+          setFormData={setFormData}
+          formData={formData}
           handleSubmit={handleSubmit}
-          setName={setName}
-          setEmail={setEmail}
-          setMessage={setMessage}
-          statusMessage={statusMessage}
         />
       </div>
     </>

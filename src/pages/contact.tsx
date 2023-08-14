@@ -1,23 +1,24 @@
 import React, { useState } from "react";
 import { ContactContainer } from "@/components/contact";
 import { Navbar } from "../components/nav";
+interface FormData {
+  name: string;
+  email: string;
+  message: string;
+  statusMessage: string;
+}
 export default function Contact(): JSX.Element {
-  //advice: could all go in an object, or DS
-  const [name, setName] = useState<string>("");
-  const [email, setEmail] = useState<string>("");
-  const [message, setMessage] = useState<string>("");
-  const [statusMessage, setStatusMessage] = useState<string>("");
-  const handleSubmit = async (e: React.SyntheticEvent) => {
+  const handleSubmit = async (e: React.SyntheticEvent, form: FormData) => {
     e.preventDefault();
     //verify credentials
-    let isValidForm = handleValidation();
+    let isValidForm = handleValidation(form);
     if (isValidForm) {
       //send data to the sendgrid api
       await fetch("/api/sendgrid", {
         body: JSON.stringify({
-          email: email,
-          name: name,
-          message: message,
+          email: form?.email,
+          name: form?.name,
+          message: form?.message,
         }),
         headers: {
           "Content-Type": "application/json",
@@ -26,16 +27,30 @@ export default function Contact(): JSX.Element {
       })
         .then((response) => {
           console.log(response);
-          setStatusMessage("The message has been successfully sent!");
+          setFormData({
+            ...formData,
+            statusMessage: "The message has been successfully sent!",
+          });
+          return;
         })
         .catch((error) => {
           console.log(error);
-          setStatusMessage("The message failed to send.");
+          setFormData({
+            ...formData,
+            statusMessage: "The message has been successfully sent!",
+          });
           return;
         });
     }
   };
-  const handleValidation = () => {
+  const [formData, setFormData] = useState<FormData>({
+    name: "",
+    email: "",
+    message: "",
+    statusMessage: "",
+  });
+  const handleValidation = (form?: FormData) => {
+    console.log(formData);
     type Errors = {
       name?: boolean;
       email?: boolean;
@@ -44,15 +59,15 @@ export default function Contact(): JSX.Element {
     let valid = true;
     let errors: Errors = {};
     //check if the fields are empty
-    if (!name.length) {
+    if (!form?.name.length) {
       errors["name"] = true;
       valid = false;
     }
-    if (!message.length) {
+    if (!form?.message.length) {
       errors["message"] = true;
       valid = false;
     }
-    if (!email.length) {
+    if (!form?.email.length) {
       errors["email"] = true;
       valid = false;
     }
@@ -62,15 +77,14 @@ export default function Contact(): JSX.Element {
     }
     return valid;
   };
+
   return (
     <>
       <Navbar />
       <ContactContainer
+        setFormData={setFormData}
+        formData={formData}
         handleSubmit={handleSubmit}
-        setEmail={setEmail}
-        setName={setName}
-        setMessage={setMessage}
-        statusMessage={statusMessage}
       />
     </>
   );
