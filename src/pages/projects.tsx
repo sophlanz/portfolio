@@ -6,7 +6,6 @@ import ProjectHeader from "@/components/projects/ProjectHeader";
 export default function Projects(): JSX.Element {
   const projectsContainerRef = useRef<HTMLDivElement>(null);
   useEffect(() => {
-    console.log(projectsContainerRef.current);
     if (projectsContainerRef.current) {
       projectsContainerRef.current.addEventListener("wheel", (event) => {
         event.preventDefault();

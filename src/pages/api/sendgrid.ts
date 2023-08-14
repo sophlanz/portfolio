@@ -8,7 +8,6 @@ async function sendEmail(req:NextApiRequest, res:NextApiResponse) {
     }
     const {name,email,message}= req.body
   
-    // console.log("REQ.BODY", req.body);
     await sendgrid.send({
       to: "sophialanzendorf@gmail.com", // Your email where you'll receive emails
       from: "sophialanzendorf@gmail.com", // your website email address here
@@ -22,7 +21,6 @@ async function sendEmail(req:NextApiRequest, res:NextApiResponse) {
       </div>`,
     })
    .catch((error)=> {
-    // console.log(error);
     return res.status(error.statusCode || 500).json({ error: error.message });
    })
   return res.status(200).json({ error: "" });

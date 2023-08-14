@@ -33,7 +33,6 @@ export default function ContactForm(props: Props): JSX.Element {
       message: "I would love to connect about",
     },
   ];
-  console.log(formData);
   return (
     <form className="contact" onSubmit={(e) => handleSubmit(e, formData)}>
       {formLabelContent.map((label) => (

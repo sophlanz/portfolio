@@ -26,7 +26,6 @@ export default function Contact(): JSX.Element {
         method: "POST",
       })
         .then((response) => {
-          console.log(response);
           setFormData({
             ...formData,
             statusMessage: "The message has been successfully sent!",
@@ -34,7 +33,6 @@ export default function Contact(): JSX.Element {
           return;
         })
         .catch((error) => {
-          console.log(error);
           setFormData({
             ...formData,
             statusMessage: "The message has been successfully sent!",
@@ -50,7 +48,6 @@ export default function Contact(): JSX.Element {
     statusMessage: "",
   });
   const handleValidation = (form?: FormData) => {
-    console.log(formData);
     type Errors = {
       name?: boolean;
       email?: boolean;
