@@ -37,6 +37,7 @@ export default function ContactForm(props: Props): JSX.Element {
     <form className="contact" onSubmit={(e) => handleSubmit(e, formData)}>
       {formLabelContent.map((label) => (
         <FormLabel
+          key={`${label.name}+${label.type}`}
           htmlFor={label.htmlFor}
           type={label.type}
           name={label.name}
