@@ -7,16 +7,16 @@ interface Props {
 }
 export default function ProjectImage(props: Props): JSX.Element {
   return (
-    <div className="imgContainer">
+    <figure className="imgContainer">
       <a href={props.githubLink} target="_blank" rel="noopener noreferrer">
         <Image
           src={props.imgSrc}
-          alt="Excursion escape app"
+          alt="project image"
           width={450}
           height={570}
           style={{ objectPosition: props.imgPosition }}
         />
       </a>
-    </div>
+    </figure>
   );
 }

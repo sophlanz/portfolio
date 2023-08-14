@@ -13,14 +13,16 @@ export default function BlogPost({
   markdownContent: string;
 }): JSX.Element {
   return (
-    <div className={"blogPost"}>
-      <div className={"blogPostTitle"}>{frontmatter.title}</div>
-      <div className={"blogPostDate"}>{frontmatter.date}</div>
-      <div className={"blogPostAuthor"}>{frontmatter.author}</div>
-      <div className={"blogPostContent"}>
+    <section className={"blogPost"}>
+      <header>
+        <h1 className={"blogPostTitle"}>{frontmatter.title}</h1>
+        <time className={"blogPostDate"}>{frontmatter.date}</time>
+        <address className={"blogPostAuthor"}>{frontmatter.author}</address>
+      </header>
+      <article className={"blogPostContent"}>
         <ReactMarkdown>{markdownContent}</ReactMarkdown>
-      </div>
-    </div>
+      </article>
+    </section>
   );
 }
 interface contextParams extends ParsedUrlQuery {

@@ -17,18 +17,20 @@ type frontmatter = {
 export default function BlogPosts(props: Props): JSX.Element {
   const { posts } = props;
   return (
-    <div>
+    <>
       <Navbar />
-      {posts?.map((post) => {
-        return (
-          <div key={`${post.slug}`}>
-            <h2>{post.frontmatter.title}</h2>
-            <p>{post.frontmatter.date}</p>
-            <p>{post.frontmatter.author}</p>
-          </div>
-        );
-      })}
-    </div>
+      <section>
+        {posts?.map((post) => {
+          return (
+            <hgroup key={`${post.slug}`}>
+              <h1>{post.frontmatter.title}</h1>
+              <h2>{post.frontmatter.date}</h2>
+              <h2>{post.frontmatter.author}</h2>
+            </hgroup>
+          );
+        })}
+      </section>
+    </>
   );
 }
 interface MarkdownModule {

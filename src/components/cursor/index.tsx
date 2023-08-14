@@ -1,1 +1,1 @@
-export { default as ShadowCursor } from "./shadowCursor";
+export { default as ShadowCursor } from "./ShadowCursor";
