@@ -48,7 +48,7 @@ export default function MenuList(props: Props): JSX.Element {
         clearInterval(interval);
       };
     }
-  }, [props.modalIsOpen]);
+  }, [props.modalIsOpen, listItems]);
 
   return (
     <ul
