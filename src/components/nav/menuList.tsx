@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import uniqid from "uniqid";
 import Link from "next/link";
 interface Props {
@@ -12,26 +12,29 @@ export default function MenuList(props: Props): JSX.Element {
       props.setIsOpen(false);
     }
   };
-  const listItems: JSX.Element[] = [
-    <li key={uniqid()} onClick={closeModal}>
-      <Link href="/">HOME</Link>
-    </li>,
-    /*   <li key={uniqid()} onClick={closeModal}>
+  const listItems: JSX.Element[] = useMemo(
+    () => [
+      <li key={uniqid()} onClick={closeModal}>
+        <Link href="/">HOME</Link>
+      </li>,
+      /*   <li key={uniqid()} onClick={closeModal}>
       <Link href="/blog">BLOG</Link>
     </li>, */
-    <li key={uniqid()} onClick={closeModal}>
-      <Link href="/projects">PROJECTS</Link>
-    </li>,
-    <li key={uniqid()} onClick={closeModal}>
-      <Link href="/about">ABOUT</Link>
-    </li>,
-    <li key={uniqid()} onClick={closeModal}>
-      <Link href="/contact">CONTACT</Link>
-    </li>,
-    <li key={uniqid()} onClick={closeModal}>
-      <Link href="/resume">RESUME</Link>
-    </li>,
-  ];
+      <li key={uniqid()} onClick={closeModal}>
+        <Link href="/projects">PROJECTS</Link>
+      </li>,
+      <li key={uniqid()} onClick={closeModal}>
+        <Link href="/about">ABOUT</Link>
+      </li>,
+      <li key={uniqid()} onClick={closeModal}>
+        <Link href="/contact">CONTACT</Link>
+      </li>,
+      <li key={uniqid()} onClick={closeModal}>
+        <Link href="/resume">RESUME</Link>
+      </li>,
+    ],
+    []
+  );
   useEffect(() => {
     if (props.modalIsOpen === true) {
       let index: number = 0;
