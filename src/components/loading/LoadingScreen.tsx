@@ -15,8 +15,7 @@ export default function LoadingScreen(): JSX.Element {
   ];
   const [word, setWord] = useState<string>();
   //get random word
-  //display it
-  useEffect(() => {
+  const getWords = () => {
     let count = 0;
     const interval = setInterval(() => {
       if (count > 10) {
@@ -27,6 +26,13 @@ export default function LoadingScreen(): JSX.Element {
     }, 150);
     return () => {
       clearInterval(interval);
+    };
+  };
+  //display it
+  useEffect(() => {
+    const cleanup = getWords();
+    return () => {
+      cleanup();
     };
   }, []);
 
