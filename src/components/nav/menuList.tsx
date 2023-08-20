@@ -54,7 +54,7 @@ export default function MenuList(props: Props): JSX.Element {
         cleanUp();
       };
     }
-  }, [props.modalIsOpen]);
+  }, [props.modalIsOpen, getListItems]);
 
   return (
     <ul
