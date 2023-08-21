@@ -1,4 +1,3 @@
-import { get } from "http";
 import React, { useState, useEffect } from "react";
 
 export default function LoadingScreen(): JSX.Element {
@@ -12,7 +11,8 @@ export default function LoadingScreen(): JSX.Element {
     "Ciao",
     "Konnichiwa",
     "Guten Tag",
-    "Namaste, Namaskar",
+    "Namaste",
+    "Namaskar",
   ];
   const [word, setWord] = useState<string>();
   //get random word
@@ -35,7 +35,7 @@ export default function LoadingScreen(): JSX.Element {
     return () => {
       cleanup();
     };
-  }, [getWords]);
+  }, []);
 
   return (
     <div className="loadingContainer">
