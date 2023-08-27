@@ -26,13 +26,14 @@ width:160px;
 
 }
 header.firstLastName:hover ~ .cursorCircle::before{
-    content:"HELLO, I'M";
+    content:"CLICK TO ENTER";
     display: block;
     width: 100%;
     text-align: center; 
     font-family:"migha";
     position:absolute;
-    top:60px;
+    right:5px;
+    top:55px;
     font-size:2rem;
     color:white;
 }
