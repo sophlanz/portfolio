@@ -16,12 +16,12 @@ export default function About(): JSX.Element {
             . Strong foundations in <span>CS fundamentals</span> with
             demonstrated <span>leetcode skills</span>. Searching for a role with
             a technically progressive large-scale company that has a{" "}
-            <span>global team </span>
+            <span>global team</span>
             due to my experience in the <span>European and Asian markets</span>.
             Over the last year I have built hands-on projects which have
-            included e-commerce, language learning with AI, and CV creation. I'm
-            looking for a role where I will be able to{" "}
-            <span>assume ownership </span>of the product, and guide feature
+            included e-commerce, language learning with AI, and CV creation.
+            I&apos;m looking for a role where I will be able to{" "}
+            <span>assume ownership</span> of the product, and guide feature
             production.
           </p>
         </section>
