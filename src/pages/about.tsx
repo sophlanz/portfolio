@@ -7,18 +7,22 @@ export default function About(): JSX.Element {
         <section className="aboutMe">
           <h1>Sophia</h1>
           <p>
-            I&apos;m Sophia,<span> software engineer</span>,
-            <span> self-starter</span>, and<span> life-long learner</span>. I
-            have built projects across the stack, but my heart is a sucker for
-            the <span> frontend</span>. I&apos;m <span>user </span> and
-            <span> product </span> obsessed, and am motivated by creating
-            high-quality <span> user-experiences</span>. I find being tasked
-            with a problem I do not know how to solve right-off-the-bat to be
-            thrilling, and <span> I thrive off of learning </span> and
-            implementing the technologies required to <span>solve</span> it.
-            When I&apos;m not building a new app or leetcoding I enjoy learning{" "}
-            <span> languages</span>, spending time in <span> nature</span>, and
-            cooking <span> Thai food </span>.
+            I&apos;m Sophia,<span> new-grad full-stack software engineer</span>,
+            highly skilled in both frontend and backend development. I pride
+            myself in writing code that is{" "}
+            <span>
+              loosely coupled, highly scalable, and highly maintainable
+            </span>
+            . Strong foundations in <span>CS fundamentals</span> with
+            demonstrated <span>leetcode skills</span>. Searching for a role with
+            a technically progressive large-scale company that has a{" "}
+            <span>global team </span>
+            due to my experience in the <span>European and Asian markets</span>.
+            Over the last year I have built hands-on projects which have
+            included e-commerce, language learning with AI, and CV creation. I'm
+            looking for a role where I will be able to{" "}
+            <span>assume ownership </span>of the product, and guide feature
+            production.
           </p>
         </section>
         <section className="quoteContainer">
